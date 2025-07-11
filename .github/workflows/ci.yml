@@ -28,6 +28,7 @@ jobs:
     - name: Run unit tests
       run: |
         cd inventory-service
+        export PYTHONPATH=.
         pytest tests/
 
     - name: Build Docker image
