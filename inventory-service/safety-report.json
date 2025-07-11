@@ -1,0 +1,1451 @@
+{
+    "report_meta": {
+        "scan_target": "environment",
+        "scanned": [
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "api_key": false,
+        "local_database_path": null,
+        "safety_version": "2.3.4",
+        "timestamp": "2025-07-11 23:55:38",
+        "packages_found": 103,
+        "vulnerabilities_found": 36,
+        "vulnerabilities_ignored": 0,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "os_type": "Windows",
+            "os_release": "10",
+            "os_description": "Windows-10-10.0.26100-SP0",
+            "python_version": "3.11.9",
+            "safety_command": "check",
+            "safety_options": {
+                "json": {
+                    "--json": 1
+                }
+            },
+            "safety_version": "2.3.4",
+            "safety_source": "cli"
+        },
+        "git": {
+            "branch": "testing",
+            "tag": "",
+            "commit": "a3d2e06ac834a74057bfc05270ba1fea11ed1700",
+            "dirty": true,
+            "origin": "https://github.com/fairulmuhammad/inventory-app.git"
+        },
+        "project": null,
+        "json_version": 1
+    },
+    "scanned_packages": {
+        "cherrypy": {
+            "name": "cherrypy",
+            "version": "18.10.0"
+        },
+        "django": {
+            "name": "django",
+            "version": "4.2.7"
+        },
+        "gitpython": {
+            "name": "gitpython",
+            "version": "3.1.44"
+        },
+        "jinja2": {
+            "name": "jinja2",
+            "version": "3.1.2"
+        },
+        "markupsafe": {
+            "name": "markupsafe",
+            "version": "2.1.3"
+        },
+        "pillow": {
+            "name": "pillow",
+            "version": "10.1.0"
+        },
+        "pyyaml": {
+            "name": "pyyaml",
+            "version": "6.0.2"
+        },
+        "asgiref": {
+            "name": "asgiref",
+            "version": "3.7.2"
+        },
+        "asttokens": {
+            "name": "asttokens",
+            "version": "2.4.1"
+        },
+        "autocommand": {
+            "name": "autocommand",
+            "version": "2.2.2"
+        },
+        "backports.tarfile": {
+            "name": "backports.tarfile",
+            "version": "1.2.0"
+        },
+        "bandit": {
+            "name": "bandit",
+            "version": "1.7.5"
+        },
+        "blinker": {
+            "name": "blinker",
+            "version": "1.7.0"
+        },
+        "certifi": {
+            "name": "certifi",
+            "version": "2025.7.9"
+        },
+        "charset-normalizer": {
+            "name": "charset-normalizer",
+            "version": "3.4.2"
+        },
+        "cheroot": {
+            "name": "cheroot",
+            "version": "10.0.1"
+        },
+        "click": {
+            "name": "click",
+            "version": "8.1.7"
+        },
+        "colorama": {
+            "name": "colorama",
+            "version": "0.4.6"
+        },
+        "comm": {
+            "name": "comm",
+            "version": "0.2.2"
+        },
+        "contourpy": {
+            "name": "contourpy",
+            "version": "1.2.0"
+        },
+        "coverage": {
+            "name": "coverage",
+            "version": "7.9.2"
+        },
+        "cycler": {
+            "name": "cycler",
+            "version": "0.12.1"
+        },
+        "cython": {
+            "name": "cython",
+            "version": "3.1.2"
+        },
+        "debugpy": {
+            "name": "debugpy",
+            "version": "1.8.1"
+        },
+        "decorator": {
+            "name": "decorator",
+            "version": "5.1.1"
+        },
+        "distlib": {
+            "name": "distlib",
+            "version": "0.3.7"
+        },
+        "dparse": {
+            "name": "dparse",
+            "version": "0.6.4"
+        },
+        "et-xmlfile": {
+            "name": "et-xmlfile",
+            "version": "2.0.0"
+        },
+        "executing": {
+            "name": "executing",
+            "version": "2.0.1"
+        },
+        "filelock": {
+            "name": "filelock",
+            "version": "3.13.1"
+        },
+        "flask": {
+            "name": "flask",
+            "version": "2.3.3"
+        },
+        "fonttools": {
+            "name": "fonttools",
+            "version": "4.50.0"
+        },
+        "gitdb": {
+            "name": "gitdb",
+            "version": "4.0.12"
+        },
+        "idna": {
+            "name": "idna",
+            "version": "3.10"
+        },
+        "iniconfig": {
+            "name": "iniconfig",
+            "version": "2.1.0"
+        },
+        "ipykernel": {
+            "name": "ipykernel",
+            "version": "6.29.3"
+        },
+        "ipython": {
+            "name": "ipython",
+            "version": "8.22.2"
+        },
+        "itsdangerous": {
+            "name": "itsdangerous",
+            "version": "2.1.2"
+        },
+        "jaraco.collections": {
+            "name": "jaraco.collections",
+            "version": "5.1.0"
+        },
+        "jaraco.context": {
+            "name": "jaraco.context",
+            "version": "6.0.1"
+        },
+        "jaraco.functools": {
+            "name": "jaraco.functools",
+            "version": "4.1.0"
+        },
+        "jaraco.text": {
+            "name": "jaraco.text",
+            "version": "4.0.0"
+        },
+        "jedi": {
+            "name": "jedi",
+            "version": "0.19.1"
+        },
+        "jupyter-client": {
+            "name": "jupyter-client",
+            "version": "8.6.1"
+        },
+        "jupyter-core": {
+            "name": "jupyter-core",
+            "version": "5.7.2"
+        },
+        "kiwisolver": {
+            "name": "kiwisolver",
+            "version": "1.4.5"
+        },
+        "markdown-it-py": {
+            "name": "markdown-it-py",
+            "version": "3.0.0"
+        },
+        "matplotlib": {
+            "name": "matplotlib",
+            "version": "3.8.3"
+        },
+        "matplotlib-inline": {
+            "name": "matplotlib-inline",
+            "version": "0.1.6"
+        },
+        "mdurl": {
+            "name": "mdurl",
+            "version": "0.1.2"
+        },
+        "more-itertools": {
+            "name": "more-itertools",
+            "version": "10.7.0"
+        },
+        "nest-asyncio": {
+            "name": "nest-asyncio",
+            "version": "1.6.0"
+        },
+        "numpy": {
+            "name": "numpy",
+            "version": "1.26.4"
+        },
+        "openpyxl": {
+            "name": "openpyxl",
+            "version": "3.1.5"
+        },
+        "packaging": {
+            "name": "packaging",
+            "version": "24.0"
+        },
+        "pandas": {
+            "name": "pandas",
+            "version": "2.2.1"
+        },
+        "parso": {
+            "name": "parso",
+            "version": "0.8.3"
+        },
+        "pbr": {
+            "name": "pbr",
+            "version": "6.1.1"
+        },
+        "pip": {
+            "name": "pip",
+            "version": "25.1.1"
+        },
+        "platformdirs": {
+            "name": "platformdirs",
+            "version": "4.1.0"
+        },
+        "pluggy": {
+            "name": "pluggy",
+            "version": "1.6.0"
+        },
+        "portend": {
+            "name": "portend",
+            "version": "3.2.1"
+        },
+        "prometheus-client": {
+            "name": "prometheus-client",
+            "version": "0.17.1"
+        },
+        "prometheus-flask-exporter": {
+            "name": "prometheus-flask-exporter",
+            "version": "0.23.0"
+        },
+        "prompt-toolkit": {
+            "name": "prompt-toolkit",
+            "version": "3.0.43"
+        },
+        "psutil": {
+            "name": "psutil",
+            "version": "5.9.8"
+        },
+        "pure-eval": {
+            "name": "pure-eval",
+            "version": "0.2.2"
+        },
+        "pygments": {
+            "name": "pygments",
+            "version": "2.17.2"
+        },
+        "pyparsing": {
+            "name": "pyparsing",
+            "version": "3.1.2"
+        },
+        "pytest": {
+            "name": "pytest",
+            "version": "7.4.3"
+        },
+        "pytest-cov": {
+            "name": "pytest-cov",
+            "version": "4.1.0"
+        },
+        "python-dateutil": {
+            "name": "python-dateutil",
+            "version": "2.9.0.post0"
+        },
+        "pytz": {
+            "name": "pytz",
+            "version": "2024.1"
+        },
+        "pywin32": {
+            "name": "pywin32",
+            "version": "306"
+        },
+        "pyzmq": {
+            "name": "pyzmq",
+            "version": "25.1.2"
+        },
+        "requests": {
+            "name": "requests",
+            "version": "2.31.0"
+        },
+        "rich": {
+            "name": "rich",
+            "version": "14.0.0"
+        },
+        "ruamel.yaml": {
+            "name": "ruamel.yaml",
+            "version": "0.18.14"
+        },
+        "ruamel.yaml.clib": {
+            "name": "ruamel.yaml.clib",
+            "version": "0.2.12"
+        },
+        "safety": {
+            "name": "safety",
+            "version": "2.3.4"
+        },
+        "seaborn": {
+            "name": "seaborn",
+            "version": "0.13.2"
+        },
+        "setuptools": {
+            "name": "setuptools",
+            "version": "80.9.0"
+        },
+        "six": {
+            "name": "six",
+            "version": "1.16.0"
+        },
+        "smmap": {
+            "name": "smmap",
+            "version": "5.0.2"
+        },
+        "sqlparse": {
+            "name": "sqlparse",
+            "version": "0.4.4"
+        },
+        "stack-data": {
+            "name": "stack-data",
+            "version": "0.6.3"
+        },
+        "stevedore": {
+            "name": "stevedore",
+            "version": "5.4.1"
+        },
+        "tempora": {
+            "name": "tempora",
+            "version": "5.8.0"
+        },
+        "tornado": {
+            "name": "tornado",
+            "version": "6.4"
+        },
+        "traitlets": {
+            "name": "traitlets",
+            "version": "5.14.2"
+        },
+        "tzdata": {
+            "name": "tzdata",
+            "version": "2023.3"
+        },
+        "urllib3": {
+            "name": "urllib3",
+            "version": "2.5.0"
+        },
+        "virtualenv": {
+            "name": "virtualenv",
+            "version": "20.25.0"
+        },
+        "wcwidth": {
+            "name": "wcwidth",
+            "version": "0.2.13"
+        },
+        "werkzeug": {
+            "name": "werkzeug",
+            "version": "3.0.1"
+        },
+        "wheel": {
+            "name": "wheel",
+            "version": "0.45.1"
+        },
+        "zc.lockfile": {
+            "name": "zc.lockfile",
+            "version": "3.0.post1"
+        },
+        "importlib-metadata": {
+            "name": "importlib-metadata",
+            "version": "8.0.0"
+        },
+        "inflect": {
+            "name": "inflect",
+            "version": "7.3.1"
+        },
+        "tomli": {
+            "name": "tomli",
+            "version": "2.0.1"
+        },
+        "typeguard": {
+            "name": "typeguard",
+            "version": "4.3.0"
+        },
+        "typing-extensions": {
+            "name": "typing-extensions",
+            "version": "4.12.2"
+        },
+        "zipp": {
+            "name": "zipp",
+            "version": "3.19.2"
+        }
+    },
+    "affected_packages": {
+        "django": {
+            "name": "django",
+            "version": "4.2.7",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "jinja2": {
+            "name": "jinja2",
+            "version": "3.1.2",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "pillow": {
+            "name": "pillow",
+            "version": "10.1.0",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "bandit": {
+            "name": "bandit",
+            "version": "1.7.5",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "flask": {
+            "name": "flask",
+            "version": "2.3.3",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "requests": {
+            "name": "requests",
+            "version": "2.31.0",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "sqlparse": {
+            "name": "sqlparse",
+            "version": "0.4.4",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "tornado": {
+            "name": "tornado",
+            "version": "6.4",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "virtualenv": {
+            "name": "virtualenv",
+            "version": "20.25.0",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        },
+        "werkzeug": {
+            "name": "werkzeug",
+            "version": "3.0.1",
+            "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "insecure_versions": [],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": null,
+            "latest_version": null,
+            "more_info_url": "https://data.safetycli.com"
+        }
+    },
+    "announcements": [],
+    "vulnerabilities": [
+        {
+            "vulnerability_id": "75744",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.20",
+            "all_vulnerable_specs": [
+                "<4.2.20",
+                ">=5.0a1,<5.0.13",
+                ">=5.1a1,<5.1.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service in django.utils.text.wrap(). The django.utils.text.wrap() and wordwrap template filter were subject to a potential denial-of-service attack when used with very long strings.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-26699",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/75744/f17"
+        },
+        {
+            "vulnerability_id": "72521",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.15",
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django has a potential SQL injection vulnerability in the QuerySet.values() and QuerySet.values_list() methods. When used on models with a JSONField, these methods are susceptible to SQL injection through column aliases if a crafted JSON object key is passed as an argument.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-42005",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72521/f17"
+        },
+        {
+            "vulnerability_id": "72515",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.15",
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Django addresses a memory exhaustion issue in django.utils.numberformat.floatformat(). When floatformat receives a string representation of a number in scientific notation with a large exponent, it could lead to excessive memory consumption. To prevent this, decimals with more than 200 digits are now returned as-is.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-41990",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72515/f17"
+        },
+        {
+            "vulnerability_id": "72520",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.15",
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Django has a potential denial-of-service vulnerability in django.utils.html.urlize() and AdminURLFieldWidget. The urlize and urlizetrunc functions, along with AdminURLFieldWidget, are vulnerable to denial-of-service attacks when handling inputs with a very large number of Unicode characters.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-41991",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72520/f17"
+        },
+        {
+            "vulnerability_id": "74396",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.17",
+            "all_vulnerable_specs": [
+                "<4.2.17",
+                ">=5.0a1,<5.0.10",
+                ">=5.1a1,<5.1.4"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Django affected versions are vulnerable to a potential SQL injection in the HasKey(lhs, rhs) lookup on Oracle databases. The vulnerability arises when untrusted data is directly used as the lhs value in the django.db.models.fields.json.HasKey lookup. However, applications using the jsonfield.has_key lookup with the __ syntax remain unaffected by this issue.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-53908",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74396/f17"
+        },
+        {
+            "vulnerability_id": "74395",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.17",
+            "all_vulnerable_specs": [
+                "<4.2.17",
+                ">=5.0a1,<5.0.10",
+                ">=5.1a1,<5.1.4"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service (DoS) attack in the `django.utils.html.strip_tags()` method. The vulnerability occurs when the `strip_tags()` method or the `striptags` template filter processes inputs containing large sequences of nested, incomplete HTML entities.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-53907",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74395/f17"
+        },
+        {
+            "vulnerability_id": "74985",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.18",
+            "all_vulnerable_specs": [
+                "<4.2.18",
+                ">=5.0.0,<5.0.11",
+                ">=5.1.0,<5.1.5"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service attack due to improper IPv6 validation. The lack of upper limit enforcement for input strings in clean_ipv6_address, is_valid_ipv6_address, and the django.forms.GenericIPAddressField form field allowed attackers to exploit overly long inputs, causing resource exhaustion. The vulnerability is addressed by defining a max_length of 39 characters for affected form fields. The django.db.models.GenericIPAddressField model field was not impacted. Users should upgrade promptly.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56374",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74985/f17"
+        },
+        {
+            "vulnerability_id": "64976",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": ">=4.0a1,<4.2.10",
+            "all_vulnerable_specs": [
+                "<3.2.24",
+                ">=4.0a1,<4.2.10",
+                ">=5.0a1,<5.0.2"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are vulnerable to potential denial-of-service in intcomma template filter when used with very long strings.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-24680",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64976/f17"
+        },
+        {
+            "vulnerability_id": "73023",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.16",
+            "all_vulnerable_specs": [
+                "<4.2.16",
+                ">=5.0a1,<5.0.9",
+                ">=5.1a1,<5.1.1"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "A potential denial-of-service vulnerability has been identified in Django's urlize() and urlizetrunc() functions in django.utils.html. This vulnerability can be triggered by inputting huge strings containing a specific sequence of characters.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-45230",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73023/f17"
+        },
+        {
+            "vulnerability_id": "73028",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.16",
+            "all_vulnerable_specs": [
+                "<4.2.16",
+                ">=5.0a1,<5.0.9",
+                ">=5.1a1,<5.1.1"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "A security vulnerability has been discovered in certain versions of Django, affecting the password reset functionality. The PasswordResetForm class in django.contrib.auth.forms inadvertently allowed attackers to enumerate user email addresses by exploiting unhandled exceptions during the email sending process. This could be done by issuing password reset requests and observing the responses. Django has implemented a fix where these exceptions are now caught and logged using the django.contrib.auth logger, preventing potential information leakage through error responses.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-45231",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73028/f17"
+        },
+        {
+            "vulnerability_id": "77119",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.21",
+            "all_vulnerable_specs": [
+                ">=5.2.0,<5.2.1",
+                ">=5.1.0,<5.1.9",
+                "<4.2.21"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "An issue was discovered in Django 4.2 before 4.2.21, 5.1 before 5.1.9, and 5.2 before 5.2.1. The django.utils.html.strip_tags() function is vulnerable to a potential denial-of-service (slow performance) when processing inputs containing large sequences of incomplete HTML tags. The template filter striptags is also vulnerable, because it is built on top of strip_tags().",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-32873",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77119/f17"
+        },
+        {
+            "vulnerability_id": "72110",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.14",
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are affected by a directory-traversal vulnerability in the Storage.save() method. Derived classes of the django.core.files.storage.Storage base class that overrides the generate_filename() method without replicating the file path validations existing in the parent class could allow for directory traversal via certain inputs when calling save(). This could enable an attacker to manipulate file paths and access unintended directories.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39330",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72110/f17"
+        },
+        {
+            "vulnerability_id": "72109",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.14",
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are affected by a username enumeration vulnerability caused by timing differences in the django.contrib.auth.backends.ModelBackend.authenticate() method. This method allowed remote attackers to enumerate users through a timing attack involving login requests for users with unusable passwords. The timing difference in the authentication process exposed whether a username was valid or not, potentially aiding attackers in gaining unauthorized access.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39329",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72109/f17"
+        },
+        {
+            "vulnerability_id": "72095",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.14",
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are affected by a potential denial-of-service vulnerability in the django.utils.html.urlize() function. The urlize and urlizetrunc template filters were susceptible to a denial-of-service attack via certain inputs containing many brackets. An attacker could exploit this vulnerability to cause significant delays or crashes in the affected application.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-38875",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72095/f17"
+        },
+        {
+            "vulnerability_id": "72111",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<4.2.14",
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are potentially vulnerable to denial-of-service via the get_supported_language_variant() method. This method was susceptible to a denial-of-service attack when used with very long strings containing specific characters. Exploiting this vulnerability could cause significant delays or crashes in the affected application, potentially leading to service disruption.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39614",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72111/f17"
+        },
+        {
+            "vulnerability_id": "65771",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": ">=4.0a1,<4.2.11",
+            "all_vulnerable_specs": [
+                "<3.2.25",
+                ">=4.0a1,<4.2.11",
+                ">=5.0a1,<5.0.3"
+            ],
+            "analyzed_version": "4.2.7",
+            "advisory": "Affected versions of Django are vulnerable to potential regular expression denial-of-service (REDoS). django.utils.text.Truncator.words() method (with html=True) and truncatewords_html template filter were subject to a potential regular expression denial-of-service attack using a suitably crafted string (follow up to CVE-2019-14232 and CVE-2023-43665).",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-27351",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/65771/f17"
+        },
+        {
+            "vulnerability_id": "71591",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.4",
+            "all_vulnerable_specs": [
+                "<3.1.4"
+            ],
+            "analyzed_version": "3.1.2",
+            "advisory": "Jinja is an extensible templating engine. The `xmlattr` filter in affected versions of Jinja accepts keys containing non-attribute characters. XML/HTML attributes cannot contain spaces, `/`, `>`, or `=`, as each would then be interpreted as starting a separate attribute. If an application accepts keys (as opposed to only values) as user input, and renders these in pages that other users see as well, an attacker could use this to inject other attributes and perform XSS. The fix for CVE-2024-22195 only addressed spaces but not other characters. Accepting keys as user input is now explicitly considered an unintended use case of the `xmlattr` filter, and code that does so without otherwise validating the input should be flagged as insecure, regardless of Jinja version. Accepting _values_ as user input continues to be safe.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-34064",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71591/f17"
+        },
+        {
+            "vulnerability_id": "76378",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.5",
+            "all_vulnerable_specs": [
+                "<3.1.5"
+            ],
+            "analyzed_version": "3.1.2",
+            "advisory": "An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker who controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to store a reference to a malicious string's format method, then pass that to a filter that calls it. No such filters are built-in to Jinja, but could be present through custom filters in an application. After the fix, such indirect calls are also handled by the sandbox.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56326",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/76378/f17"
+        },
+        {
+            "vulnerability_id": "74735",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.5",
+            "all_vulnerable_specs": [
+                "<3.1.5"
+            ],
+            "analyzed_version": "3.1.2",
+            "advisory": "A vulnerability in the Jinja compiler allows an attacker who can control both the content and filename of a template to execute arbitrary Python code, bypassing Jinja's sandbox protections. To exploit this vulnerability, an attacker must have the ability to manipulate both the template's filename and its contents. The risk depends on the application's specific use case. This issue affects applications that render untrusted templates where the attacker can determine the template filename, potentially leading to severe security breaches.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56201",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74735/f17"
+        },
+        {
+            "vulnerability_id": "75976",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.6",
+            "all_vulnerable_specs": [
+                "<3.1.6"
+            ],
+            "analyzed_version": "3.1.2",
+            "advisory": "Prior to 3.1.6, an oversight in how the Jinja sandboxed environment interacts with the |attr filter allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to use the |attr filter to get a reference to a string's plain format method, bypassing the sandbox. After the fix, the |attr filter no longer bypasses the environment's attribute lookup. This vulnerability is fixed in 3.1.6.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-27516",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/75976/f17"
+        },
+        {
+            "vulnerability_id": "64227",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.3",
+            "all_vulnerable_specs": [
+                "<3.1.3"
+            ],
+            "analyzed_version": "3.1.2",
+            "advisory": "Jinja is an extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. It is possible to inject arbitrary HTML attributes into the rendered HTML template, potentially leading to Cross-Site Scripting (XSS). The Jinja `xmlattr` filter can be abused to inject arbitrary HTML attribute keys and values, bypassing the auto escaping mechanism and potentially leading to XSS. It may also be possible to bypass attribute validation checks if they are blacklist-based.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-22195",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64227/f17"
+        },
+        {
+            "vulnerability_id": "67136",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<10.3.0",
+            "all_vulnerable_specs": [
+                "<10.3.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "advisory": "Pillow 10.3.0 introduces a security update addressing CVE-2024-28219 by replacing certain functions with strncpy to prevent buffer overflow issues.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-28219",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/67136/f17"
+        },
+        {
+            "vulnerability_id": "64437",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<10.2.0",
+            "all_vulnerable_specs": [
+                "<10.2.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "advisory": "Pillow is potentially vulnerable to DoS attacks through PIL.ImageFont.ImageFont.getmask(). A decompression bomb check has also been added to the affected function.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64437/f17"
+        },
+        {
+            "vulnerability_id": "64436",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<10.2.0",
+            "all_vulnerable_specs": [
+                "<10.2.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "advisory": "Pillow is affected by an arbitrary code execution vulnerability. If an attacker has control over the keys passed to the environment argument of PIL.ImageMath.eval(), they may be able to execute arbitrary code.\r\nhttps://pillow.readthedocs.io/en/stable/releasenotes/10.2.0.html",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2023-50447",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64436/f17"
+        },
+        {
+            "vulnerability_id": "64484",
+            "package_name": "bandit",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<1.7.7",
+            "all_vulnerable_specs": [
+                "<1.7.7"
+            ],
+            "analyzed_version": "1.7.5",
+            "advisory": "Bandit 1.7.7 identifies the str.replace method as a potential risk for SQL injection because it can be misused in constructing SQL queries, potentially enabling the execution of arbitrary SQL code.\r\nhttps://github.com/PyCQA/bandit/pull/1044/commits/d909043ba20853c90a7cad4a5b58a180f6937bf8",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64484/f17"
+        },
+        {
+            "vulnerability_id": "77323",
+            "package_name": "flask",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.1.1",
+            "all_vulnerable_specs": [
+                "<3.1.1"
+            ],
+            "analyzed_version": "2.3.3",
+            "advisory": "Affected versions of Flask (\u2264 3.1.0) are vulnerable to incorrect fallback key configuration in session signing, leading to stale key usage instead of the intended current key. This flaw undermines session integrity, enabling remote attackers to forge or tamper with cookies via manipulated SECRET_KEY_FALLBACKS parameters. The vulnerability exists in the itsdangerous-based signing routines within flask.sessions (fallback key list ordering).",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-47278",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77323/f17"
+        },
+        {
+            "vulnerability_id": "71064",
+            "package_name": "requests",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<2.32.2",
+            "all_vulnerable_specs": [
+                "<2.32.2"
+            ],
+            "analyzed_version": "2.31.0",
+            "advisory": "Affected versions of Requests, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. Requests 2.32.0 fixes the issue, but versions 2.32.0 and 2.32.1 were yanked due to conflicts with CVE-2024-35195 mitigation.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-35195",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71064/f17"
+        },
+        {
+            "vulnerability_id": "67887",
+            "package_name": "sqlparse",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<0.5.0",
+            "all_vulnerable_specs": [
+                "<0.5.0"
+            ],
+            "analyzed_version": "0.4.4",
+            "advisory": "Sqlparse 0.5.0 addresses a potential denial of service (DoS) vulnerability related to recursion errors in deeply nested SQL statements. To mitigate this issue, the update replaces recursion errors with a general SQLParseError, improving the resilience and stability of the parsing process.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-4340",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/67887/f17"
+        },
+        {
+            "vulnerability_id": "77319",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<6.5.0",
+            "all_vulnerable_specs": [
+                "<6.5.0"
+            ],
+            "analyzed_version": "6.4",
+            "advisory": "When Tornado's multipart/form-data parser encounters certain errors, it logs a warning but continues trying to parse the remainder of the data. This allows remote attackers to generate an extremely high volume of logs, constituting a DoS attack. This DoS is compounded by the fact that the logging subsystem is synchronous.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-47287",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77319/f17"
+        },
+        {
+            "vulnerability_id": "71956",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<6.4.1",
+            "all_vulnerable_specs": [
+                "<6.4.1"
+            ],
+            "analyzed_version": "6.4",
+            "advisory": "Tornado\u2019s curl_httpclient.CurlAsyncHTTPClient class is vulnerable to CRLF (carriage return/line feed) injection in the request headers.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71956/f17"
+        },
+        {
+            "vulnerability_id": "74439",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<6.4.2",
+            "all_vulnerable_specs": [
+                "<6.4.2"
+            ],
+            "analyzed_version": "6.4",
+            "advisory": "Tornado web framework affected versions contain a performance vulnerability in their HTTP cookie parser. When processing specially crafted malicious cookie headers, the parser's algorithm can exhibit quadratic time complexity. Since this parsing happens in the main event loop thread, it can cause the server to become unresponsive and block the processing of other incoming requests due to excessive CPU usage.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-52804",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74439/f17"
+        },
+        {
+            "vulnerability_id": "71957",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<=6.4.0",
+            "all_vulnerable_specs": [
+                "<=6.4.0"
+            ],
+            "analyzed_version": "6.4",
+            "advisory": "When Tornado receives a request with two Transfer-Encoding: chunked headers, it ignores them both. This enables request smuggling when Tornado is deployed behind a proxy server that emits such requests. Pound does this.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71957/f17"
+        },
+        {
+            "vulnerability_id": "73456",
+            "package_name": "virtualenv",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<20.26.6",
+            "all_vulnerable_specs": [
+                "<20.26.6"
+            ],
+            "analyzed_version": "20.25.0",
+            "advisory": "Affected versions of the virtualenv package are vulnerable to command injection. This vulnerability could allow an attacker to execute arbitrary commands by exploiting improperly quoted string placeholders in activation scripts. The vulnerable functions include various shell activation scripts where placeholders like __VIRTUAL_ENV__ are used. The exploitability depends on the ability to control the input to these placeholders. Users are advised to update to the version where a quoting mechanism has been implemented to mitigate this risk. This vulnerability is specific to environments where shell scripts are used for virtual environment activation. The issue is tracked under CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection').",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73456/f17"
+        },
+        {
+            "vulnerability_id": "73969",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.0.6",
+            "all_vulnerable_specs": [
+                "<3.0.6"
+            ],
+            "analyzed_version": "3.0.1",
+            "advisory": "Affected versions of Werkzeug are vulnerable to Path Traversal (CWE-22) on Windows systems running Python versions below 3.11. The safe_join() function failed to properly detect certain absolute paths on Windows, allowing attackers to potentially access files outside the intended directory. An attacker could craft special paths starting with \"/\" that bypass the directory restrictions on Windows systems. The vulnerability exists in the safe_join() function which relied solely on os.path.isabs() for path validation. This is exploitable on Windows systems by passing paths starting with \"/\" to safe_join(). To remediate, upgrade to the latest version which includes additional path validation checks. \r\nNOTE: This vulnerability specifically affects Windows systems running Python versions below 3.11 where ntpath.isabs() behavior differs.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-49766",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73969/f17"
+        },
+        {
+            "vulnerability_id": "73889",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.0.6",
+            "all_vulnerable_specs": [
+                "<3.0.6"
+            ],
+            "analyzed_version": "3.0.1",
+            "advisory": "Affected versions of Werkzeug are potentially vulnerable to resource exhaustion when parsing file data in forms. Applications using 'werkzeug.formparser.MultiPartParser' to parse 'multipart/form-data' requests (e.g. all flask applications) are vulnerable to a relatively simple but effective resource exhaustion (denial of service) attack. A specifically crafted form submission request can cause the parser to allocate and block 3 to 8 times the upload size in main memory. There is no upper limit; a single upload at 1 Gbit/s can exhaust 32 GB of RAM in less than 60 seconds.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-49767",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73889/f17"
+        },
+        {
+            "vulnerability_id": "71594",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": "<3.0.3",
+            "all_vulnerable_specs": [
+                "<3.0.3"
+            ],
+            "analyzed_version": "3.0.1",
+            "advisory": "Werkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-34069",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71594/f17"
+        }
+    ],
+    "ignored_vulnerabilities": [],
+    "remediations": {
+        "django": {
+            "current_version": "4.2.7",
+            "vulnerabilities_found": 16,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=4.2.7"
+        },
+        "jinja2": {
+            "current_version": "3.1.2",
+            "vulnerabilities_found": 5,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=3.1.2"
+        },
+        "pillow": {
+            "current_version": "10.1.0",
+            "vulnerabilities_found": 3,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=10.1.0"
+        },
+        "bandit": {
+            "current_version": "1.7.5",
+            "vulnerabilities_found": 1,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=1.7.5"
+        },
+        "flask": {
+            "current_version": "2.3.3",
+            "vulnerabilities_found": 1,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=2.3.3"
+        },
+        "requests": {
+            "current_version": "2.31.0",
+            "vulnerabilities_found": 1,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=2.31.0"
+        },
+        "sqlparse": {
+            "current_version": "0.4.4",
+            "vulnerabilities_found": 1,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=0.4.4"
+        },
+        "tornado": {
+            "current_version": "6.4",
+            "vulnerabilities_found": 4,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=6.4"
+        },
+        "virtualenv": {
+            "current_version": "20.25.0",
+            "vulnerabilities_found": 1,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=20.25.0"
+        },
+        "werkzeug": {
+            "current_version": "3.0.1",
+            "vulnerabilities_found": 3,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": "https://data.safetycli.com/?from=3.0.1"
+        }
+    }
+}

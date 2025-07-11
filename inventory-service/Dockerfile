@@ -56,10 +56,10 @@ USER appuser
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:5000/health')" || exit 1
+    CMD python -c "import requests; requests.get('http://localhost:5001/health')" || exit 1
 
 # Expose port
-EXPOSE 5000
+EXPOSE 5001
 
 # Run application
-CMD ["python", "app.py"]
+CMD ["/home/appuser/.local/bin/python", "app.py"]

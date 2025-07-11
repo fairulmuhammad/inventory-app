@@ -1,4 +1,4 @@
-version: "3.9"
+
 
 services:
   # Application Services
@@ -23,7 +23,7 @@ services:
   # Monitoring Services
   prometheus:
     image: prom/prometheus:v2.45.0
-    container_name: prometheus
+    container_name: inventory-prometheus
     ports:
       - "9090:9090"
     volumes:
@@ -41,7 +41,7 @@ services:
 
   grafana:
     image: grafana/grafana:10.0.0
-    container_name: grafana
+    container_name: inventory-grafana
     ports:
       - "3000:3000"
     volumes:
@@ -59,7 +59,7 @@ services:
 
   loki:
     image: grafana/loki:2.9.0
-    container_name: loki
+    container_name: inventory-loki
     ports:
       - "3100:3100"
     volumes:
@@ -71,7 +71,7 @@ services:
 
   promtail:
     image: grafana/promtail:2.9.0
-    container_name: promtail
+    container_name: inventory-promtail
     volumes:
       - ./logs:/var/log
       - ./monitoring/promtail:/etc/promtail
@@ -84,7 +84,7 @@ services:
   # Node Exporter for system metrics
   node-exporter:
     image: prom/node-exporter:v1.6.0
-    container_name: node-exporter
+    container_name: inventory-node-exporter
     ports:
       - "9100:9100"
     volumes:
