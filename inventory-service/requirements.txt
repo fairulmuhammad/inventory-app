@@ -1,1 +1,8 @@
 flask==2.3.3
+pytest==7.4.3
+pytest-cov==4.1.0
+requests==2.31.0
+bandit==1.7.5
+safety==2.3.4
+prometheus-client==0.17.1
+prometheus-flask-exporter==0.23.0

@@ -1,0 +1,67 @@
+groups:
+  - name: inventory_service_alerts
+    rules:
+      - alert: InventoryServiceDown
+        expr: up{job="inventory-service"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Inventory Service is down"
+          description: "Inventory service has been down for more than 1 minute."
+
+      - alert: HighErrorRate
+        expr: rate(inventory_errors_total[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value }} errors per second."
+
+      - alert: HighResponseTime
+        expr: histogram_quantile(0.95, rate(inventory_request_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time"
+          description: "95th percentile response time is {{ $value }} seconds."
+
+      - alert: LowInventoryItems
+        expr: inventory_items_total < 5
+        for: 1m
+        labels:
+          severity: info
+        annotations:
+          summary: "Low inventory count"
+          description: "Total inventory items: {{ $value }}"
+
+  - name: system_alerts
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80% for more than 5 minutes."
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 85% for more than 5 minutes."
+
+      - alert: LowDiskSpace
+        expr: 100 - ((node_filesystem_avail_bytes{mountpoint="/"} * 100) / node_filesystem_size_bytes{mountpoint="/"}) > 85
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Low disk space"
+          description: "Disk usage is above 85% for more than 5 minutes."

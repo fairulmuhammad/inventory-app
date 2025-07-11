@@ -1,0 +1,32 @@
+# Bandit Security Configuration
+[bandit]
+exclude = /tests/,/venv/,__pycache__/
+skips = B101,B601
+
+# Test-related skips
+[bandit.B101]
+# Skip assert_used test (common in test files)
+
+[bandit.B601]
+# Skip paramiko_calls (if using paramiko for legitimate purposes)
+
+# Custom rules
+[bandit.blacklist_calls]
+bad_name_sets = 
+    pickle:
+        qualname:
+            - pickle.loads
+            - pickle.load
+            - pickle.Unpickler
+            - cPickle.loads
+            - cPickle.load
+            - cPickle.Unpickler
+        message: "Pickle library appears to be in use, possible security issue."
+
+[bandit.blacklist_imports]
+bad_imports = 
+    - pickle:
+        message: "Consider avoiding pickle module due to security implications"
+    - subprocess:
+        level: "LOW"
+        message: "subprocess module usage detected, ensure proper input validation"
