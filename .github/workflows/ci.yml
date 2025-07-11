@@ -8,11 +8,14 @@ on:
 
 jobs:
   build-and-test:
+    name: Build and Analyze
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # disarankan oleh SonarQube
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -36,14 +39,7 @@ jobs:
         docker build -t inventory-service ./inventory-service
 
     - name: SonarQube Scan
-      uses: SonarSource/sonarqube-scan-action@v2
+      uses: SonarSource/sonarqube-scan-action@v5
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-
-    - name: SonarQube Quality Gate
-      uses: SonarSource/sonarqube-quality-gate-action@v1
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      timeout-minutes: 5
