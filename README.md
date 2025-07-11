@@ -45,23 +45,51 @@ Developer → Git Push → GitHub Actions →
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Docker and Docker Compose
-- Python 3.9+
-- Git
+- **Docker & Docker Compose** - Container orchestration
+- **Python 3.10+** - Runtime environment
+- **Git** - Version control
+- **kubectl** (optional) - Kubernetes deployment
 
-### Quick Start
+### 🎬 Interactive Demo
+Run the complete DevOps pipeline demonstration:
+
+```bash
+# Interactive demo with all features
+chmod +x scripts/demo.sh
+./scripts/demo.sh
+
+# Automated demo (no user interaction)  
+./scripts/demo.sh auto
+```
+
+### 🐳 Docker Deployment (Recommended)
 ```bash
 # Clone repository
 git clone <repository-url>
 cd inventory-app
 
-# Start all services
+# Start complete monitoring stack
 docker-compose up -d
 
 # Access applications
 # Inventory Service: http://localhost:5001
 # Grafana: http://localhost:3000 (admin/admin123)
 # Prometheus: http://localhost:9090
+# Loki: http://localhost:3100
+```
+
+### ☸️ Kubernetes Deployment
+```bash
+# Deploy to Kubernetes cluster
+chmod +x scripts/k8s-deploy.sh
+./scripts/k8s-deploy.sh deploy
+
+# Canary deployment
+chmod +x scripts/canary-deploy.sh
+./scripts/canary-deploy.sh canary technova/inventory-service:v1.1.0
+
+# Auto-scaling demo
+./scripts/k8s-deploy.sh load-test 120 20
 ```
 
 ### Environment Setup

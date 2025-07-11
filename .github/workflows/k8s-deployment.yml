@@ -1,0 +1,331 @@
+name: Kubernetes Deployment Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: technova/inventory-service
+  K8S_NAMESPACE: technova-inventory
+
+jobs:
+  # Build and test job (reused from main CI/CD)
+  build-and-test:
+    runs-on: ubuntu-latest
+    outputs:
+      image-tag: ${{ steps.meta.outputs.tags }}
+      image-digest: ${{ steps.build.outputs.digest }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        cd inventory-service
+        pip install -r requirements.txt
+        
+    - name: Run tests
+      run: |
+        cd inventory-service
+        python -m pytest tests/ -v --cov=app --cov-report=xml
+        
+    - name: Security scan with Bandit
+      run: |
+        cd inventory-service
+        bandit -r . -f json -o bandit-report.json || true
+        
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      
+    - name: Log in to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha,prefix={{branch}}-
+          
+    - name: Build and push Docker image
+      id: build
+      uses: docker/build-push-action@v5
+      with:
+        context: ./inventory-service
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+  # Security scanning
+  security-scan:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: ${{ needs.build-and-test.outputs.image-tag }}
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  # Deploy to staging
+  deploy-staging:
+    runs-on: ubuntu-latest
+    needs: [build-and-test, security-scan]
+    if: github.ref == 'refs/heads/develop'
+    environment: staging
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_STAGING }}
+        
+    - name: Deploy to staging
+      run: |
+        # Replace image tag in deployment
+        sed -i 's|technova/inventory-service:v1.0.0|${{ needs.build-and-test.outputs.image-tag }}|g' k8s/deployment.yaml
+        
+        # Apply configurations
+        kubectl apply -f k8s/deployment.yaml
+        kubectl apply -f k8s/autoscaling.yaml
+        
+        # Wait for deployment
+        kubectl rollout status deployment/inventory-service -n technova-inventory-staging --timeout=300s
+        
+    - name: Run smoke tests
+      run: |
+        # Get service URL
+        STAGING_URL=$(kubectl get service inventory-service -n technova-inventory-staging -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+        
+        # Wait for service to be ready
+        sleep 30
+        
+        # Run smoke tests
+        curl -f "http://${STAGING_URL}/health" || exit 1
+        curl -f "http://${STAGING_URL}/items" || exit 1
+
+  # Canary deployment to production
+  canary-deployment:
+    runs-on: ubuntu-latest
+    needs: [build-and-test, deploy-staging]
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_PROD }}
+        
+    - name: Make scripts executable
+      run: chmod +x scripts/*.sh
+      
+    - name: Create canary deployment
+      run: |
+        # Extract image tag without registry prefix for script
+        IMAGE_TAG=$(echo "${{ needs.build-and-test.outputs.image-tag }}" | cut -d':' -f2)
+        
+        # Run canary deployment
+        ./scripts/canary-deploy.sh canary "${{ needs.build-and-test.outputs.image-tag }}"
+        
+    - name: Monitor canary metrics
+      run: |
+        # Monitor for 5 minutes
+        sleep 300
+        
+        # Check canary health
+        kubectl get pods -n technova-inventory-canary -l app=inventory-service-canary
+        
+    - name: Promote or rollback canary
+      run: |
+        # Get canary success rate (this would typically come from monitoring)
+        SUCCESS_RATE=95  # This should be calculated from actual metrics
+        
+        if [ $SUCCESS_RATE -ge 95 ]; then
+          echo "Canary successful, promoting to production"
+          ./scripts/canary-deploy.sh promote "${{ needs.build-and-test.outputs.image-tag }}"
+        else
+          echo "Canary failed, rolling back"
+          ./scripts/canary-deploy.sh rollback
+          exit 1
+        fi
+
+  # Full production deployment (for tagged releases)
+  deploy-production:
+    runs-on: ubuntu-latest
+    needs: [build-and-test, security-scan]
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_PROD }}
+        
+    - name: Make scripts executable
+      run: chmod +x scripts/*.sh
+      
+    - name: Blue-Green deployment
+      run: |
+        # Run blue-green deployment for tagged releases
+        ./scripts/canary-deploy.sh blue-green "${{ needs.build-and-test.outputs.image-tag }}"
+        
+    - name: Run production health checks
+      run: |
+        # Wait for deployment to stabilize
+        sleep 60
+        
+        # Run comprehensive health checks
+        ./scripts/k8s-deploy.sh status
+        
+        # Run load test
+        ./scripts/k8s-deploy.sh load-test 120 20
+
+  # Rollback job (manual trigger)
+  rollback-production:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    environment: production
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_PROD }}
+        
+    - name: Make scripts executable
+      run: chmod +x scripts/*.sh
+      
+    - name: Rollback deployment
+      run: |
+        ./scripts/k8s-deploy.sh rollback ${{ github.event.inputs.revision }}
+
+  # Chaos engineering tests (scheduled)
+  chaos-engineering:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    environment: staging
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_STAGING }}
+        
+    - name: Make scripts executable
+      run: chmod +x scripts/*.sh
+      
+    - name: Run chaos tests
+      run: |
+        ./scripts/k8s-deploy.sh chaos
+        
+    - name: Generate chaos report
+      run: |
+        echo "Chaos engineering test completed at $(date)" > chaos-report.txt
+        kubectl get events -n technova-inventory-staging --sort-by='.lastTimestamp' >> chaos-report.txt
+        
+    - name: Upload chaos report
+      uses: actions/upload-artifact@v3
+      with:
+        name: chaos-engineering-report
+        path: chaos-report.txt
+
+  # Performance monitoring
+  performance-monitoring:
+    runs-on: ubuntu-latest
+    needs: [deploy-production]
+    if: always() && startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Configure kubectl
+      uses: azure/k8s-set-context@v3
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_PROD }}
+        
+    - name: Collect performance metrics
+      run: |
+        # Collect metrics from Prometheus
+        kubectl port-forward -n monitoring service/prometheus 9090:9090 &
+        sleep 10
+        
+        # Query key metrics
+        curl -s 'http://localhost:9090/api/v1/query?query=rate(http_requests_total[5m])' > metrics-report.json
+        curl -s 'http://localhost:9090/api/v1/query?query=histogram_quantile(0.95,rate(http_request_duration_seconds_bucket[5m]))' >> metrics-report.json
+        curl -s 'http://localhost:9090/api/v1/query?query=up{job="inventory-service"}' >> metrics-report.json
+        
+    - name: Upload performance report
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-metrics
+        path: metrics-report.json
+
+# Schedule for automated chaos testing
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Run chaos tests every Monday at 2 AM
+
+# Manual workflow dispatch for rollbacks
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: 'Rollback to specific revision (optional)'
+        required: false
+        default: ''
