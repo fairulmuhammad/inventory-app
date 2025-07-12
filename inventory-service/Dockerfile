@@ -42,12 +42,13 @@ COPY --from=builder /root/.local /home/appuser/.local
 # Copy application code
 COPY . .
 
-# Create logs directory
-RUN mkdir -p /app/logs && chown -R appuser:appuser /app
+# Create logs directory and ensure proper ownership
+RUN mkdir -p /app/logs && chown -R appuser:appuser /app && chown -R appuser:appuser /home/appuser/.local
 
 # Set environment variables
 ENV PYTHONPATH=/home/appuser/.local/lib/python3.9/site-packages:$PYTHONPATH
 ENV PATH=/home/appuser/.local/bin:$PATH
+ENV PYTHONPATH=/home/appuser/.local/lib/python3.9/site-packages:/usr/local/lib/python3.9/site-packages
 ENV FLASK_ENV=production
 ENV PYTHONUNBUFFERED=1
 
@@ -56,10 +57,10 @@ USER appuser
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:5001/health')" || exit 1
+    CMD python -c "import requests; requests.get('http://localhost:5000/health')" || exit 1
 
 # Expose port
-EXPOSE 5001
+EXPOSE 5000
 
 # Run application
-CMD ["/home/appuser/.local/bin/python", "app.py"]
+CMD ["python", "app.py"]
