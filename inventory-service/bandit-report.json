@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generated_at": "2025-07-11T17:46:36Z",
+  "generated_at": "2025-07-12T07:04:45Z",
   "metrics": {
     ".\\app.py": {
       "CONFIDENCE.HIGH": 0,
@@ -29,41 +29,41 @@
       "skipped_tests": 0
     },
     ".\\tests\\test_integration.py": {
-      "CONFIDENCE.HIGH": 3,
-      "CONFIDENCE.LOW": 12,
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
       "CONFIDENCE.UNDEFINED": 0,
       "SEVERITY.HIGH": 0,
-      "SEVERITY.LOW": 3,
-      "SEVERITY.MEDIUM": 12,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 64,
+      "loc": 66,
       "nosec": 0,
       "skipped_tests": 0
     },
     ".\\tests\\test_performance.py": {
       "CONFIDENCE.HIGH": 0,
-      "CONFIDENCE.LOW": 3,
+      "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
       "CONFIDENCE.UNDEFINED": 0,
       "SEVERITY.HIGH": 0,
       "SEVERITY.LOW": 0,
-      "SEVERITY.MEDIUM": 3,
+      "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 45,
+      "loc": 50,
       "nosec": 0,
       "skipped_tests": 0
     },
     "_totals": {
-      "CONFIDENCE.HIGH": 3,
-      "CONFIDENCE.LOW": 15,
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 1,
       "CONFIDENCE.UNDEFINED": 0,
       "SEVERITY.HIGH": 0,
-      "SEVERITY.LOW": 3,
-      "SEVERITY.MEDIUM": 16,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 465,
+      "loc": 472,
       "nosec": 0,
       "skipped_tests": 0
     }
@@ -85,379 +85,9 @@
       "line_range": [
         200
       ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b104_hardcoded_bind_all_interfaces.html",
+      "more_info": "https://bandit.readthedocs.io/en/1.8.6/plugins/b104_hardcoded_bind_all_interfaces.html",
       "test_id": "B104",
       "test_name": "hardcoded_bind_all_interfaces"
-    },
-    {
-      "code": "3 import time\n4 import subprocess\n5 import signal\n",
-      "col_offset": 0,
-      "end_col_offset": 17,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "HIGH",
-      "issue_cwe": {
-        "id": 78,
-        "link": "https://cwe.mitre.org/data/definitions/78.html"
-      },
-      "issue_severity": "LOW",
-      "issue_text": "Consider possible security implications associated with the subprocess module.",
-      "line_number": 4,
-      "line_range": [
-        4
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/blacklists/blacklist_imports.html#b404-import-subprocess",
-      "test_id": "B404",
-      "test_name": "blacklist"
-    },
-    {
-      "code": "15         # Start the app in a separate process\n16         proc = subprocess.Popen(\n17             [\"python\", \"app.py\"],\n18             cwd=\"./\",\n19             stdout=subprocess.PIPE,\n20             stderr=subprocess.PIPE\n21         )\n22         \n",
-      "col_offset": 15,
-      "end_col_offset": 9,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "HIGH",
-      "issue_cwe": {
-        "id": 78,
-        "link": "https://cwe.mitre.org/data/definitions/78.html"
-      },
-      "issue_severity": "LOW",
-      "issue_text": "Starting a process with a partial executable path",
-      "line_number": 16,
-      "line_range": [
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b607_start_process_with_partial_path.html",
-      "test_id": "B607",
-      "test_name": "start_process_with_partial_path"
-    },
-    {
-      "code": "15         # Start the app in a separate process\n16         proc = subprocess.Popen(\n17             [\"python\", \"app.py\"],\n18             cwd=\"./\",\n19             stdout=subprocess.PIPE,\n20             stderr=subprocess.PIPE\n21         )\n22         \n",
-      "col_offset": 15,
-      "end_col_offset": 9,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "HIGH",
-      "issue_cwe": {
-        "id": 78,
-        "link": "https://cwe.mitre.org/data/definitions/78.html"
-      },
-      "issue_severity": "LOW",
-      "issue_text": "subprocess call - check for execution of untrusted input.",
-      "line_number": 16,
-      "line_range": [
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b603_subprocess_without_shell_equals_true.html",
-      "test_id": "B603",
-      "test_name": "subprocess_without_shell_equals_true"
-    },
-    {
-      "code": "36         # Test health check\n37         response = requests.get(f\"{base_url}/health\")\n38         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 53,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 37,
-      "line_range": [
-        37
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "41         # Test getting all items (initial state)\n42         response = requests.get(f\"{base_url}/items\")\n43         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 52,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 42,
-      "line_range": [
-        42
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "47         new_item = {\"name\": \"Integration Test Item\", \"stock\": 50}\n48         response = requests.post(f\"{base_url}/items\", json=new_item)\n49         assert response.status_code == 201\n",
-      "col_offset": 19,
-      "end_col_offset": 68,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 48,
-      "line_range": [
-        48
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "53         # Verify item was added\n54         response = requests.get(f\"{base_url}/items\")\n55         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 52,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 54,
-      "line_range": [
-        54
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "58         # Test getting specific item\n59         response = requests.get(f\"{base_url}/items/{item_id}\")\n60         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 62,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 59,
-      "line_range": [
-        59
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "64         updated_data = {\"name\": \"Updated Integration Item\", \"stock\": 75}\n65         response = requests.put(f\"{base_url}/items/{item_id}\", json=updated_data)\n66         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 81,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 65,
-      "line_range": [
-        65
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "69         # Test deleting the item\n70         response = requests.delete(f\"{base_url}/items/{item_id}\")\n71         assert response.status_code == 200\n",
-      "col_offset": 19,
-      "end_col_offset": 65,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 70,
-      "line_range": [
-        70
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "73         # Verify item was deleted\n74         response = requests.get(f\"{base_url}/items/{item_id}\")\n75         assert response.status_code == 404\n",
-      "col_offset": 19,
-      "end_col_offset": 62,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 74,
-      "line_range": [
-        74
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "82         invalid_item = {\"name\": \"\", \"stock\": -1}\n83         response = requests.post(f\"{base_url}/items\", json=invalid_item)\n84         assert response.status_code == 400\n",
-      "col_offset": 19,
-      "end_col_offset": 72,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 83,
-      "line_range": [
-        83
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "86         # Test non-existent item\n87         response = requests.get(f\"{base_url}/items/99999\")\n88         assert response.status_code == 404\n",
-      "col_offset": 19,
-      "end_col_offset": 58,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 87,
-      "line_range": [
-        87
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "90         # Test updating non-existent item\n91         response = requests.put(f\"{base_url}/items/99999\", json={\"name\": \"Test\", \"stock\": 10})\n92         assert response.status_code == 404\n",
-      "col_offset": 19,
-      "end_col_offset": 94,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 91,
-      "line_range": [
-        91
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "94         # Test deleting non-existent item\n95         response = requests.delete(f\"{base_url}/items/99999\")\n96         assert response.status_code == 404\n",
-      "col_offset": 19,
-      "end_col_offset": 61,
-      "filename": ".\\tests\\test_integration.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 95,
-      "line_range": [
-        95
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "15         start_time = time.time()\n16         response = requests.get(f\"{self.BASE_URL}/items\")\n17         end_time = time.time()\n",
-      "col_offset": 19,
-      "end_col_offset": 57,
-      "filename": ".\\tests\\test_performance.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 16,
-      "line_range": [
-        16
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "25         def make_request():\n26             return requests.get(f\"{self.BASE_URL}/items\")\n27         \n",
-      "col_offset": 19,
-      "end_col_offset": 57,
-      "filename": ".\\tests\\test_performance.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 26,
-      "line_range": [
-        26
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
-    },
-    {
-      "code": "42             start_time = time.time()\n43             response = requests.get(f\"{self.BASE_URL}/items\")\n44             end_time = time.time()\n",
-      "col_offset": 23,
-      "end_col_offset": 61,
-      "filename": ".\\tests\\test_performance.py",
-      "issue_confidence": "LOW",
-      "issue_cwe": {
-        "id": 400,
-        "link": "https://cwe.mitre.org/data/definitions/400.html"
-      },
-      "issue_severity": "MEDIUM",
-      "issue_text": "Requests call without timeout",
-      "line_number": 43,
-      "line_range": [
-        43
-      ],
-      "more_info": "https://bandit.readthedocs.io/en/1.7.5/plugins/b113_request_without_timeout.html",
-      "test_id": "B113",
-      "test_name": "request_without_timeout"
     }
   ]
 }
