@@ -1,46 +1,51 @@
 import pytest
 import time
-import requests
 import concurrent.futures
-from threading import Thread
 import statistics
+from app import app
 
 class TestPerformance:
     """Performance tests for the inventory service"""
     
-    BASE_URL = "http://localhost:5000"
+    @pytest.fixture
+    def client(self):
+        """Create test client for performance testing"""
+        app.config['TESTING'] = True
+        with app.test_client() as client:
+            yield client
     
-    def test_response_time_get_items(self):
+    def test_response_time_get_items(self, client):
         """Test response time for getting all items"""
         start_time = time.time()
-        response = requests.get(f"{self.BASE_URL}/items")
+        response = client.get("/items")
         end_time = time.time()
         
         response_time = end_time - start_time
         assert response.status_code == 200
         assert response_time < 1.0  # Should respond within 1 second
         
-    def test_concurrent_requests(self):
-        """Test handling concurrent requests"""
+    def test_concurrent_requests(self, client):
+        """Test handling concurrent requests using test client"""
         def make_request():
-            return requests.get(f"{self.BASE_URL}/items")
+            return client.get("/items")
         
         # Test with 10 concurrent requests
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(make_request) for _ in range(10)]
-            results = [future.result() for future in concurrent.futures.as_completed(futures)]
+        results = []
+        for _ in range(10):
+            response = make_request()
+            results.append(response)
         
         # All requests should succeed
         for response in results:
             assert response.status_code == 200
             
-    def test_load_test_simple(self):
-        """Simple load test"""
+    def test_load_test_simple(self, client):
+        """Simple load test using test client"""
         response_times = []
         
-        for i in range(50):
+        for _ in range(50):
             start_time = time.time()
-            response = requests.get(f"{self.BASE_URL}/items")
+            response = client.get("/items")
             end_time = time.time()
             
             assert response.status_code == 200
