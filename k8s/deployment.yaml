@@ -69,7 +69,7 @@ spec:
       automountServiceAccountToken: false
       containers:
       - name: inventory-service
-        image: technova/inventory-service:v1.0.0
+        image: ghcr.io/GITHUB_REPOSITORY/inventory-service:IMAGE_TAG
         ports:
         - containerPort: 5000
           protocol: TCP

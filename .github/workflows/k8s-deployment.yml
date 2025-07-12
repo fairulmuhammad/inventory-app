@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: technova/inventory-service
+  IMAGE_NAME: ${{ github.repository }}/inventory-service
   K8S_NAMESPACE: technova-inventory
 
 jobs:
@@ -31,6 +31,13 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      
+    - name: Log in to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -129,7 +136,8 @@ jobs:
     - name: Deploy to staging
       run: |
         # Replace image tag in deployment
-        sed -i 's|technova/inventory-service:v1.0.0|${{ needs.build-and-test.outputs.image-tag }}|g' k8s/deployment.yaml
+        sed -i 's|GITHUB_REPOSITORY|${{ github.repository }}|g' k8s/deployment.yaml
+        sed -i 's|IMAGE_TAG|${{ github.sha }}|g' k8s/deployment.yaml
         
         # Apply configurations
         kubectl apply -f k8s/deployment.yaml
