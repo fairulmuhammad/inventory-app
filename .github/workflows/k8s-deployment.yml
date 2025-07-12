@@ -6,6 +6,14 @@ on:
     tags: [ 'v*' ]
   pull_request:
     branches: [ main ]
+  schedule:
+    - cron: '0 2 * * 1'  # Run chaos tests every Monday at 2 AM
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: 'Rollback to specific revision (optional)'
+        required: false
+        default: ''
 
 env:
   REGISTRY: ghcr.io
@@ -33,6 +41,7 @@ jobs:
       run: |
         cd inventory-service
         pip install -r requirements.txt
+        pip install pytest pytest-cov bandit
         
     - name: Run tests
       run: |
@@ -316,16 +325,3 @@ jobs:
       with:
         name: performance-metrics
         path: metrics-report.json
-
-# Schedule for automated chaos testing
-on:
-  schedule:
-    - cron: '0 2 * * 1'  # Run chaos tests every Monday at 2 AM
-
-# Manual workflow dispatch for rollbacks
-  workflow_dispatch:
-    inputs:
-      revision:
-        description: 'Rollback to specific revision (optional)'
-        required: false
-        default: ''
