@@ -36,7 +36,7 @@ jobs:
         python -m pytest tests/ -v --cov=. --cov-report=xml --cov-report=html
     
     - name: Upload coverage reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-report
         path: inventory-service/htmlcov/
@@ -71,7 +71,7 @@ jobs:
         safety check --json --output safety-report.json || true
     
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: |
@@ -89,7 +89,7 @@ jobs:
         fetch-depth: 0
     
     - name: Download test coverage
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: coverage-report
         path: inventory-service/htmlcov/

@@ -288,7 +288,7 @@ jobs:
         kubectl get events -n technova-inventory-staging --sort-by='.lastTimestamp' >> chaos-report.txt
         
     - name: Upload chaos report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: chaos-engineering-report
         path: chaos-report.txt
@@ -321,7 +321,7 @@ jobs:
         curl -s 'http://localhost:9090/api/v1/query?query=up{job="inventory-service"}' >> metrics-report.json
         
     - name: Upload performance report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: performance-metrics
         path: metrics-report.json
