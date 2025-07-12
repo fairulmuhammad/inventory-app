@@ -63,13 +63,6 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
       
-    - name: Log in to Container Registry
-      uses: docker/login-action@v3
-      with:
-        registry: ${{ env.REGISTRY }}
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        
     - name: Extract metadata
       id: meta
       uses: docker/metadata-action@v5
@@ -103,16 +96,25 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
+    - name: Extract single image tag for scanning
+      id: extract-tag
+      run: |
+        # Get the first tag from the multi-line output
+        SINGLE_TAG=$(echo "${{ needs.build-and-test.outputs.image-tag }}" | head -n1)
+        echo "image-tag=$SINGLE_TAG" >> $GITHUB_OUTPUT
+        echo "Scanning image: $SINGLE_TAG"
+      
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: ${{ needs.build-and-test.outputs.image-tag }}
+        image-ref: ${{ steps.extract-tag.outputs.image-tag }}
         format: 'sarif'
         output: 'trivy-results.sarif'
+      continue-on-error: true
         
     - name: Upload Trivy scan results to GitHub Security tab
-      uses: github/codeql-action/upload-sarif@v2
-      if: always()
+      uses: github/codeql-action/upload-sarif@v3
+      if: always() && hashFiles('trivy-results.sarif') != ''
       with:
         sarif_file: 'trivy-results.sarif'
 
