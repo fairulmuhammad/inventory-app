@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 import logging
+import os  # Added for environment variable security fix
 from datetime import datetime
 from prometheus_flask_exporter import PrometheusMetrics
 from prometheus_client import Counter, Histogram, Gauge
@@ -197,4 +198,11 @@ def delete_item(item_id):
         return jsonify({"error": "Internal server error"}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    # Security Fix B104: Environment-based host configuration
+    # Default to localhost for security, override with environment variables
+    HOST = os.getenv('FLASK_HOST', '127.0.0.1')  # Default to localhost
+    PORT = int(os.getenv('FLASK_PORT', 5000))
+    DEBUG = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
+    
+    logger.info(f"Starting Flask application on {HOST}:{PORT} (debug={DEBUG})")
+    app.run(host=HOST, port=PORT, debug=DEBUG)
