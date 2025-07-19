@@ -1,0 +1,4984 @@
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
+{
+    "report_meta": {
+        "scan_target": "environment",
+        "scanned": [
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\python311.zip",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib",
+            "C:\\DevOps\\test-uas\\inventory-app\\inventory-service",
+            "c:\\program files\\windowsapps\\pythonsoftwarefoundation.python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\lib\\site-packages",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\setuptools\\_vendor",
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\win32",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\win32\\lib",
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\Pythonwin"
+        ],
+        "scanned_full_path": [
+            "C:\\DevOps\\test-uas\\inventory-app\\inventory-service",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\python311.zip",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\DLLs",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages",
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\win32",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\win32\\lib",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\Pythonwin",
+            "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages",
+            "c:\\program files\\windowsapps\\pythonsoftwarefoundation.python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\lib\\site-packages",
+            "C:\\Users\\muham\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\setuptools\\_vendor",
+            "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+        ],
+        "target_languages": [
+            "python"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "audit_and_monitor": false,
+        "api_key": false,
+        "account": "",
+        "local_database_path": null,
+        "safety_version": "3.6.0",
+        "timestamp": "2025-07-17 17:05:46",
+        "packages_found": 127,
+        "vulnerabilities_found": 36,
+        "vulnerabilities_ignored": 0,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "safety_options": {
+                "json": {
+                    "--json": 1
+                }
+            },
+            "safety_version": "3.6.0",
+            "safety_source": "cli",
+            "os_type": "Windows",
+            "os_release": "10",
+            "os_description": "Windows-10-10.0.26100-SP0",
+            "python_version": "3.11.9",
+            "safety_command": "check"
+        },
+        "git": {
+            "branch": "main",
+            "tag": "",
+            "commit": "b21c03ee7490637d3204d0450abc1c5cb0fbc61c",
+            "dirty": "True",
+            "origin": "https://github.com/fairulmuhammad/inventory-app.git"
+        },
+        "project": null,
+        "json_version": "1.1",
+        "remediations_attempted": 0,
+        "remediations_completed": 0,
+        "remediation_mode": "NON_INTERACTIVE"
+    },
+    "scanned_packages": {
+        "cherrypy": {
+            "name": "cherrypy",
+            "version": "18.10.0",
+            "requirements": [
+                {
+                    "raw": "cherrypy==18.10.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cherrypy",
+                    "specifier": "==18.10.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "django": {
+            "name": "django",
+            "version": "4.2.7",
+            "requirements": [
+                {
+                    "raw": "django==4.2.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "django",
+                    "specifier": "==4.2.7",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "gitpython": {
+            "name": "gitpython",
+            "version": "3.1.44",
+            "requirements": [
+                {
+                    "raw": "gitpython==3.1.44",
+                    "extras": [],
+                    "marker": null,
+                    "name": "gitpython",
+                    "specifier": "==3.1.44",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jinja2": {
+            "name": "jinja2",
+            "version": "3.1.2",
+            "requirements": [
+                {
+                    "raw": "jinja2==3.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jinja2",
+                    "specifier": "==3.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "markupsafe": {
+            "name": "markupsafe",
+            "version": "2.1.3",
+            "requirements": [
+                {
+                    "raw": "markupsafe==2.1.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "markupsafe",
+                    "specifier": "==2.1.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pillow": {
+            "name": "pillow",
+            "version": "10.1.0",
+            "requirements": [
+                {
+                    "raw": "pillow==10.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pillow",
+                    "specifier": "==10.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pyyaml": {
+            "name": "pyyaml",
+            "version": "6.0.2",
+            "requirements": [
+                {
+                    "raw": "pyyaml==6.0.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pyyaml",
+                    "specifier": "==6.0.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "annotated-types": {
+            "name": "annotated-types",
+            "version": "0.7.0",
+            "requirements": [
+                {
+                    "raw": "annotated-types==0.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "annotated-types",
+                    "specifier": "==0.7.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "anyio": {
+            "name": "anyio",
+            "version": "4.9.0",
+            "requirements": [
+                {
+                    "raw": "anyio==4.9.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "anyio",
+                    "specifier": "==4.9.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "asgiref": {
+            "name": "asgiref",
+            "version": "3.7.2",
+            "requirements": [
+                {
+                    "raw": "asgiref==3.7.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "asgiref",
+                    "specifier": "==3.7.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "asttokens": {
+            "name": "asttokens",
+            "version": "2.4.1",
+            "requirements": [
+                {
+                    "raw": "asttokens==2.4.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "asttokens",
+                    "specifier": "==2.4.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "authlib": {
+            "name": "authlib",
+            "version": "1.6.0",
+            "requirements": [
+                {
+                    "raw": "authlib==1.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "authlib",
+                    "specifier": "==1.6.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "autocommand": {
+            "name": "autocommand",
+            "version": "2.2.2",
+            "requirements": [
+                {
+                    "raw": "autocommand==2.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "autocommand",
+                    "specifier": "==2.2.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "backports.tarfile": {
+            "name": "backports.tarfile",
+            "version": "1.2.0",
+            "requirements": [
+                {
+                    "raw": "backports.tarfile==1.2.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "backports.tarfile",
+                    "specifier": "==1.2.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "bandit": {
+            "name": "bandit",
+            "version": "1.8.6",
+            "requirements": [
+                {
+                    "raw": "bandit==1.8.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "bandit",
+                    "specifier": "==1.8.6",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "bcrypt": {
+            "name": "bcrypt",
+            "version": "4.3.0",
+            "requirements": [
+                {
+                    "raw": "bcrypt==4.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "bcrypt",
+                    "specifier": "==4.3.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "blinker": {
+            "name": "blinker",
+            "version": "1.7.0",
+            "requirements": [
+                {
+                    "raw": "blinker==1.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "blinker",
+                    "specifier": "==1.7.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "certifi": {
+            "name": "certifi",
+            "version": "2025.7.9",
+            "requirements": [
+                {
+                    "raw": "certifi==2025.7.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "certifi",
+                    "specifier": "==2025.7.9",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "cffi": {
+            "name": "cffi",
+            "version": "1.17.1",
+            "requirements": [
+                {
+                    "raw": "cffi==1.17.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cffi",
+                    "specifier": "==1.17.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "charset-normalizer": {
+            "name": "charset-normalizer",
+            "version": "3.4.2",
+            "requirements": [
+                {
+                    "raw": "charset-normalizer==3.4.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "charset-normalizer",
+                    "specifier": "==3.4.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "cheroot": {
+            "name": "cheroot",
+            "version": "10.0.1",
+            "requirements": [
+                {
+                    "raw": "cheroot==10.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cheroot",
+                    "specifier": "==10.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "click": {
+            "name": "click",
+            "version": "8.1.7",
+            "requirements": [
+                {
+                    "raw": "click==8.1.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "click",
+                    "specifier": "==8.1.7",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "colorama": {
+            "name": "colorama",
+            "version": "0.4.6",
+            "requirements": [
+                {
+                    "raw": "colorama==0.4.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "colorama",
+                    "specifier": "==0.4.6",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "comm": {
+            "name": "comm",
+            "version": "0.2.2",
+            "requirements": [
+                {
+                    "raw": "comm==0.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "comm",
+                    "specifier": "==0.2.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "contourpy": {
+            "name": "contourpy",
+            "version": "1.2.0",
+            "requirements": [
+                {
+                    "raw": "contourpy==1.2.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "contourpy",
+                    "specifier": "==1.2.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "coverage": {
+            "name": "coverage",
+            "version": "7.9.2",
+            "requirements": [
+                {
+                    "raw": "coverage==7.9.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "coverage",
+                    "specifier": "==7.9.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "cryptography": {
+            "name": "cryptography",
+            "version": "45.0.5",
+            "requirements": [
+                {
+                    "raw": "cryptography==45.0.5",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cryptography",
+                    "specifier": "==45.0.5",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "cycler": {
+            "name": "cycler",
+            "version": "0.12.1",
+            "requirements": [
+                {
+                    "raw": "cycler==0.12.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cycler",
+                    "specifier": "==0.12.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "cython": {
+            "name": "cython",
+            "version": "3.1.2",
+            "requirements": [
+                {
+                    "raw": "cython==3.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "cython",
+                    "specifier": "==3.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "debugpy": {
+            "name": "debugpy",
+            "version": "1.8.1",
+            "requirements": [
+                {
+                    "raw": "debugpy==1.8.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "debugpy",
+                    "specifier": "==1.8.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "decorator": {
+            "name": "decorator",
+            "version": "5.1.1",
+            "requirements": [
+                {
+                    "raw": "decorator==5.1.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "decorator",
+                    "specifier": "==5.1.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "distlib": {
+            "name": "distlib",
+            "version": "0.3.7",
+            "requirements": [
+                {
+                    "raw": "distlib==0.3.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "distlib",
+                    "specifier": "==0.3.7",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "dparse": {
+            "name": "dparse",
+            "version": "0.6.4",
+            "requirements": [
+                {
+                    "raw": "dparse==0.6.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "dparse",
+                    "specifier": "==0.6.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "et-xmlfile": {
+            "name": "et-xmlfile",
+            "version": "2.0.0",
+            "requirements": [
+                {
+                    "raw": "et-xmlfile==2.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "et-xmlfile",
+                    "specifier": "==2.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "executing": {
+            "name": "executing",
+            "version": "2.0.1",
+            "requirements": [
+                {
+                    "raw": "executing==2.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "executing",
+                    "specifier": "==2.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "filelock": {
+            "name": "filelock",
+            "version": "3.16.1",
+            "requirements": [
+                {
+                    "raw": "filelock==3.16.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "filelock",
+                    "specifier": "==3.16.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "flask": {
+            "name": "flask",
+            "version": "2.3.3",
+            "requirements": [
+                {
+                    "raw": "flask==2.3.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "flask",
+                    "specifier": "==2.3.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "fonttools": {
+            "name": "fonttools",
+            "version": "4.50.0",
+            "requirements": [
+                {
+                    "raw": "fonttools==4.50.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "fonttools",
+                    "specifier": "==4.50.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "gitdb": {
+            "name": "gitdb",
+            "version": "4.0.12",
+            "requirements": [
+                {
+                    "raw": "gitdb==4.0.12",
+                    "extras": [],
+                    "marker": null,
+                    "name": "gitdb",
+                    "specifier": "==4.0.12",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "h11": {
+            "name": "h11",
+            "version": "0.16.0",
+            "requirements": [
+                {
+                    "raw": "h11==0.16.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "h11",
+                    "specifier": "==0.16.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "httpcore": {
+            "name": "httpcore",
+            "version": "1.0.9",
+            "requirements": [
+                {
+                    "raw": "httpcore==1.0.9",
+                    "extras": [],
+                    "marker": null,
+                    "name": "httpcore",
+                    "specifier": "==1.0.9",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "httpx": {
+            "name": "httpx",
+            "version": "0.28.1",
+            "requirements": [
+                {
+                    "raw": "httpx==0.28.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "httpx",
+                    "specifier": "==0.28.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "idna": {
+            "name": "idna",
+            "version": "3.10",
+            "requirements": [
+                {
+                    "raw": "idna==3.10",
+                    "extras": [],
+                    "marker": null,
+                    "name": "idna",
+                    "specifier": "==3.10",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "iniconfig": {
+            "name": "iniconfig",
+            "version": "2.1.0",
+            "requirements": [
+                {
+                    "raw": "iniconfig==2.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "iniconfig",
+                    "specifier": "==2.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "ipykernel": {
+            "name": "ipykernel",
+            "version": "6.29.3",
+            "requirements": [
+                {
+                    "raw": "ipykernel==6.29.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ipykernel",
+                    "specifier": "==6.29.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "ipython": {
+            "name": "ipython",
+            "version": "8.22.2",
+            "requirements": [
+                {
+                    "raw": "ipython==8.22.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ipython",
+                    "specifier": "==8.22.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "itsdangerous": {
+            "name": "itsdangerous",
+            "version": "2.1.2",
+            "requirements": [
+                {
+                    "raw": "itsdangerous==2.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "itsdangerous",
+                    "specifier": "==2.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jaraco.collections": {
+            "name": "jaraco.collections",
+            "version": "5.1.0",
+            "requirements": [
+                {
+                    "raw": "jaraco.collections==5.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jaraco.collections",
+                    "specifier": "==5.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jaraco.context": {
+            "name": "jaraco.context",
+            "version": "6.0.1",
+            "requirements": [
+                {
+                    "raw": "jaraco.context==6.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jaraco.context",
+                    "specifier": "==6.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jaraco.functools": {
+            "name": "jaraco.functools",
+            "version": "4.1.0",
+            "requirements": [
+                {
+                    "raw": "jaraco.functools==4.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jaraco.functools",
+                    "specifier": "==4.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jaraco.text": {
+            "name": "jaraco.text",
+            "version": "4.0.0",
+            "requirements": [
+                {
+                    "raw": "jaraco.text==4.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jaraco.text",
+                    "specifier": "==4.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jedi": {
+            "name": "jedi",
+            "version": "0.19.1",
+            "requirements": [
+                {
+                    "raw": "jedi==0.19.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jedi",
+                    "specifier": "==0.19.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "joblib": {
+            "name": "joblib",
+            "version": "1.5.1",
+            "requirements": [
+                {
+                    "raw": "joblib==1.5.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "joblib",
+                    "specifier": "==1.5.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jupyter-client": {
+            "name": "jupyter-client",
+            "version": "8.6.1",
+            "requirements": [
+                {
+                    "raw": "jupyter-client==8.6.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jupyter-client",
+                    "specifier": "==8.6.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "jupyter-core": {
+            "name": "jupyter-core",
+            "version": "5.7.2",
+            "requirements": [
+                {
+                    "raw": "jupyter-core==5.7.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jupyter-core",
+                    "specifier": "==5.7.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "kiwisolver": {
+            "name": "kiwisolver",
+            "version": "1.4.5",
+            "requirements": [
+                {
+                    "raw": "kiwisolver==1.4.5",
+                    "extras": [],
+                    "marker": null,
+                    "name": "kiwisolver",
+                    "specifier": "==1.4.5",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "markdown-it-py": {
+            "name": "markdown-it-py",
+            "version": "3.0.0",
+            "requirements": [
+                {
+                    "raw": "markdown-it-py==3.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "markdown-it-py",
+                    "specifier": "==3.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "marshmallow": {
+            "name": "marshmallow",
+            "version": "4.0.0",
+            "requirements": [
+                {
+                    "raw": "marshmallow==4.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "marshmallow",
+                    "specifier": "==4.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "matplotlib": {
+            "name": "matplotlib",
+            "version": "3.8.3",
+            "requirements": [
+                {
+                    "raw": "matplotlib==3.8.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "matplotlib",
+                    "specifier": "==3.8.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "matplotlib-inline": {
+            "name": "matplotlib-inline",
+            "version": "0.1.6",
+            "requirements": [
+                {
+                    "raw": "matplotlib-inline==0.1.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "matplotlib-inline",
+                    "specifier": "==0.1.6",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "mdurl": {
+            "name": "mdurl",
+            "version": "0.1.2",
+            "requirements": [
+                {
+                    "raw": "mdurl==0.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "mdurl",
+                    "specifier": "==0.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "more-itertools": {
+            "name": "more-itertools",
+            "version": "10.7.0",
+            "requirements": [
+                {
+                    "raw": "more-itertools==10.7.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "more-itertools",
+                    "specifier": "==10.7.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "nest-asyncio": {
+            "name": "nest-asyncio",
+            "version": "1.6.0",
+            "requirements": [
+                {
+                    "raw": "nest-asyncio==1.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "nest-asyncio",
+                    "specifier": "==1.6.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "nltk": {
+            "name": "nltk",
+            "version": "3.9.1",
+            "requirements": [
+                {
+                    "raw": "nltk==3.9.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "nltk",
+                    "specifier": "==3.9.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "numpy": {
+            "name": "numpy",
+            "version": "1.26.4",
+            "requirements": [
+                {
+                    "raw": "numpy==1.26.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "numpy",
+                    "specifier": "==1.26.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "openpyxl": {
+            "name": "openpyxl",
+            "version": "3.1.5",
+            "requirements": [
+                {
+                    "raw": "openpyxl==3.1.5",
+                    "extras": [],
+                    "marker": null,
+                    "name": "openpyxl",
+                    "specifier": "==3.1.5",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "packaging": {
+            "name": "packaging",
+            "version": "24.0",
+            "requirements": [
+                {
+                    "raw": "packaging==24.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "packaging",
+                    "specifier": "==24.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pandas": {
+            "name": "pandas",
+            "version": "2.2.1",
+            "requirements": [
+                {
+                    "raw": "pandas==2.2.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pandas",
+                    "specifier": "==2.2.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "parso": {
+            "name": "parso",
+            "version": "0.8.3",
+            "requirements": [
+                {
+                    "raw": "parso==0.8.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "parso",
+                    "specifier": "==0.8.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pbr": {
+            "name": "pbr",
+            "version": "6.1.1",
+            "requirements": [
+                {
+                    "raw": "pbr==6.1.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pbr",
+                    "specifier": "==6.1.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pip": {
+            "name": "pip",
+            "version": "25.1.1",
+            "requirements": [
+                {
+                    "raw": "pip==25.1.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pip",
+                    "specifier": "==25.1.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "platformdirs": {
+            "name": "platformdirs",
+            "version": "4.1.0",
+            "requirements": [
+                {
+                    "raw": "platformdirs==4.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "platformdirs",
+                    "specifier": "==4.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pluggy": {
+            "name": "pluggy",
+            "version": "1.6.0",
+            "requirements": [
+                {
+                    "raw": "pluggy==1.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pluggy",
+                    "specifier": "==1.6.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "portend": {
+            "name": "portend",
+            "version": "3.2.1",
+            "requirements": [
+                {
+                    "raw": "portend==3.2.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "portend",
+                    "specifier": "==3.2.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "prometheus-client": {
+            "name": "prometheus-client",
+            "version": "0.17.1",
+            "requirements": [
+                {
+                    "raw": "prometheus-client==0.17.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "prometheus-client",
+                    "specifier": "==0.17.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "prometheus-flask-exporter": {
+            "name": "prometheus-flask-exporter",
+            "version": "0.23.0",
+            "requirements": [
+                {
+                    "raw": "prometheus-flask-exporter==0.23.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "prometheus-flask-exporter",
+                    "specifier": "==0.23.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "prompt-toolkit": {
+            "name": "prompt-toolkit",
+            "version": "3.0.43",
+            "requirements": [
+                {
+                    "raw": "prompt-toolkit==3.0.43",
+                    "extras": [],
+                    "marker": null,
+                    "name": "prompt-toolkit",
+                    "specifier": "==3.0.43",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "psutil": {
+            "name": "psutil",
+            "version": "6.1.1",
+            "requirements": [
+                {
+                    "raw": "psutil==6.1.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "psutil",
+                    "specifier": "==6.1.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pure-eval": {
+            "name": "pure-eval",
+            "version": "0.2.2",
+            "requirements": [
+                {
+                    "raw": "pure-eval==0.2.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pure-eval",
+                    "specifier": "==0.2.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pycparser": {
+            "name": "pycparser",
+            "version": "2.22",
+            "requirements": [
+                {
+                    "raw": "pycparser==2.22",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pycparser",
+                    "specifier": "==2.22",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pydantic": {
+            "name": "pydantic",
+            "version": "2.9.2",
+            "requirements": [
+                {
+                    "raw": "pydantic==2.9.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pydantic",
+                    "specifier": "==2.9.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pydantic-core": {
+            "name": "pydantic-core",
+            "version": "2.23.4",
+            "requirements": [
+                {
+                    "raw": "pydantic-core==2.23.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pydantic-core",
+                    "specifier": "==2.23.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pygments": {
+            "name": "pygments",
+            "version": "2.17.2",
+            "requirements": [
+                {
+                    "raw": "pygments==2.17.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pygments",
+                    "specifier": "==2.17.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pyparsing": {
+            "name": "pyparsing",
+            "version": "3.1.2",
+            "requirements": [
+                {
+                    "raw": "pyparsing==3.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pyparsing",
+                    "specifier": "==3.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pypdf2": {
+            "name": "pypdf2",
+            "version": "3.0.1",
+            "requirements": [
+                {
+                    "raw": "pypdf2==3.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pypdf2",
+                    "specifier": "==3.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pytest": {
+            "name": "pytest",
+            "version": "7.4.3",
+            "requirements": [
+                {
+                    "raw": "pytest==7.4.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pytest",
+                    "specifier": "==7.4.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pytest-cov": {
+            "name": "pytest-cov",
+            "version": "4.1.0",
+            "requirements": [
+                {
+                    "raw": "pytest-cov==4.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pytest-cov",
+                    "specifier": "==4.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "python-dateutil": {
+            "name": "python-dateutil",
+            "version": "2.9.0.post0",
+            "requirements": [
+                {
+                    "raw": "python-dateutil==2.9.0.post0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "python-dateutil",
+                    "specifier": "==2.9.0.post0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pytz": {
+            "name": "pytz",
+            "version": "2024.1",
+            "requirements": [
+                {
+                    "raw": "pytz==2024.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pytz",
+                    "specifier": "==2024.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pywin32": {
+            "name": "pywin32",
+            "version": "306",
+            "requirements": [
+                {
+                    "raw": "pywin32==306",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pywin32",
+                    "specifier": "==306",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "pyzmq": {
+            "name": "pyzmq",
+            "version": "25.1.2",
+            "requirements": [
+                {
+                    "raw": "pyzmq==25.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pyzmq",
+                    "specifier": "==25.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "regex": {
+            "name": "regex",
+            "version": "2024.11.6",
+            "requirements": [
+                {
+                    "raw": "regex==2024.11.6",
+                    "extras": [],
+                    "marker": null,
+                    "name": "regex",
+                    "specifier": "==2024.11.6",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "requests": {
+            "name": "requests",
+            "version": "2.31.0",
+            "requirements": [
+                {
+                    "raw": "requests==2.31.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "requests",
+                    "specifier": "==2.31.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "rich": {
+            "name": "rich",
+            "version": "14.0.0",
+            "requirements": [
+                {
+                    "raw": "rich==14.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "rich",
+                    "specifier": "==14.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "ruamel.yaml": {
+            "name": "ruamel.yaml",
+            "version": "0.18.14",
+            "requirements": [
+                {
+                    "raw": "ruamel.yaml==0.18.14",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ruamel.yaml",
+                    "specifier": "==0.18.14",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "ruamel.yaml.clib": {
+            "name": "ruamel.yaml.clib",
+            "version": "0.2.12",
+            "requirements": [
+                {
+                    "raw": "ruamel.yaml.clib==0.2.12",
+                    "extras": [],
+                    "marker": null,
+                    "name": "ruamel.yaml.clib",
+                    "specifier": "==0.2.12",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "safety": {
+            "name": "safety",
+            "version": "3.6.0",
+            "requirements": [
+                {
+                    "raw": "safety==3.6.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "safety",
+                    "specifier": "==3.6.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "safety-schemas": {
+            "name": "safety-schemas",
+            "version": "0.0.14",
+            "requirements": [
+                {
+                    "raw": "safety-schemas==0.0.14",
+                    "extras": [],
+                    "marker": null,
+                    "name": "safety-schemas",
+                    "specifier": "==0.0.14",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "seaborn": {
+            "name": "seaborn",
+            "version": "0.13.2",
+            "requirements": [
+                {
+                    "raw": "seaborn==0.13.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "seaborn",
+                    "specifier": "==0.13.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "setuptools": {
+            "name": "setuptools",
+            "version": "80.9.0",
+            "requirements": [
+                {
+                    "raw": "setuptools==80.9.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "setuptools",
+                    "specifier": "==80.9.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "shellingham": {
+            "name": "shellingham",
+            "version": "1.5.4",
+            "requirements": [
+                {
+                    "raw": "shellingham==1.5.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "shellingham",
+                    "specifier": "==1.5.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "six": {
+            "name": "six",
+            "version": "1.16.0",
+            "requirements": [
+                {
+                    "raw": "six==1.16.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "six",
+                    "specifier": "==1.16.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "smmap": {
+            "name": "smmap",
+            "version": "5.0.2",
+            "requirements": [
+                {
+                    "raw": "smmap==5.0.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "smmap",
+                    "specifier": "==5.0.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "sniffio": {
+            "name": "sniffio",
+            "version": "1.3.1",
+            "requirements": [
+                {
+                    "raw": "sniffio==1.3.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "sniffio",
+                    "specifier": "==1.3.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "sqlparse": {
+            "name": "sqlparse",
+            "version": "0.4.4",
+            "requirements": [
+                {
+                    "raw": "sqlparse==0.4.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "sqlparse",
+                    "specifier": "==0.4.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "stack-data": {
+            "name": "stack-data",
+            "version": "0.6.3",
+            "requirements": [
+                {
+                    "raw": "stack-data==0.6.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "stack-data",
+                    "specifier": "==0.6.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "stevedore": {
+            "name": "stevedore",
+            "version": "5.4.1",
+            "requirements": [
+                {
+                    "raw": "stevedore==5.4.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "stevedore",
+                    "specifier": "==5.4.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tempora": {
+            "name": "tempora",
+            "version": "5.8.0",
+            "requirements": [
+                {
+                    "raw": "tempora==5.8.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tempora",
+                    "specifier": "==5.8.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tenacity": {
+            "name": "tenacity",
+            "version": "9.1.2",
+            "requirements": [
+                {
+                    "raw": "tenacity==9.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tenacity",
+                    "specifier": "==9.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tomlkit": {
+            "name": "tomlkit",
+            "version": "0.13.3",
+            "requirements": [
+                {
+                    "raw": "tomlkit==0.13.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tomlkit",
+                    "specifier": "==0.13.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tornado": {
+            "name": "tornado",
+            "version": "6.4",
+            "requirements": [
+                {
+                    "raw": "tornado==6.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tornado",
+                    "specifier": "==6.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tqdm": {
+            "name": "tqdm",
+            "version": "4.67.1",
+            "requirements": [
+                {
+                    "raw": "tqdm==4.67.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tqdm",
+                    "specifier": "==4.67.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "traitlets": {
+            "name": "traitlets",
+            "version": "5.14.2",
+            "requirements": [
+                {
+                    "raw": "traitlets==5.14.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "traitlets",
+                    "specifier": "==5.14.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "typer": {
+            "name": "typer",
+            "version": "0.16.0",
+            "requirements": [
+                {
+                    "raw": "typer==0.16.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typer",
+                    "specifier": "==0.16.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "typing-extensions": {
+            "name": "typing-extensions",
+            "version": "4.14.1",
+            "requirements": [
+                {
+                    "raw": "typing-extensions==4.14.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typing-extensions",
+                    "specifier": "==4.14.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "tzdata": {
+            "name": "tzdata",
+            "version": "2023.3",
+            "requirements": [
+                {
+                    "raw": "tzdata==2023.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tzdata",
+                    "specifier": "==2023.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "urllib3": {
+            "name": "urllib3",
+            "version": "2.5.0",
+            "requirements": [
+                {
+                    "raw": "urllib3==2.5.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "urllib3",
+                    "specifier": "==2.5.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "virtualenv": {
+            "name": "virtualenv",
+            "version": "20.25.0",
+            "requirements": [
+                {
+                    "raw": "virtualenv==20.25.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "virtualenv",
+                    "specifier": "==20.25.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "wcwidth": {
+            "name": "wcwidth",
+            "version": "0.2.13",
+            "requirements": [
+                {
+                    "raw": "wcwidth==0.2.13",
+                    "extras": [],
+                    "marker": null,
+                    "name": "wcwidth",
+                    "specifier": "==0.2.13",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "werkzeug": {
+            "name": "werkzeug",
+            "version": "3.0.1",
+            "requirements": [
+                {
+                    "raw": "werkzeug==3.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "werkzeug",
+                    "specifier": "==3.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "wheel": {
+            "name": "wheel",
+            "version": "0.45.1",
+            "requirements": [
+                {
+                    "raw": "wheel==0.45.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "wheel",
+                    "specifier": "==0.45.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "zc.lockfile": {
+            "name": "zc.lockfile",
+            "version": "3.0.post1",
+            "requirements": [
+                {
+                    "raw": "zc.lockfile==3.0.post1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "zc.lockfile",
+                    "specifier": "==3.0.post1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ]
+        },
+        "importlib-metadata": {
+            "name": "importlib-metadata",
+            "version": "8.0.0",
+            "requirements": [
+                {
+                    "raw": "importlib-metadata==8.0.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "importlib-metadata",
+                    "specifier": "==8.0.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+                }
+            ]
+        },
+        "inflect": {
+            "name": "inflect",
+            "version": "7.3.1",
+            "requirements": [
+                {
+                    "raw": "inflect==7.3.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "inflect",
+                    "specifier": "==7.3.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+                }
+            ]
+        },
+        "tomli": {
+            "name": "tomli",
+            "version": "2.0.1",
+            "requirements": [
+                {
+                    "raw": "tomli==2.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tomli",
+                    "specifier": "==2.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+                }
+            ]
+        },
+        "typeguard": {
+            "name": "typeguard",
+            "version": "4.3.0",
+            "requirements": [
+                {
+                    "raw": "typeguard==4.3.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "typeguard",
+                    "specifier": "==4.3.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+                }
+            ]
+        },
+        "zipp": {
+            "name": "zipp",
+            "version": "3.19.2",
+            "requirements": [
+                {
+                    "raw": "zipp==3.19.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "zipp",
+                    "specifier": "==3.19.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages\\setuptools\\_vendor"
+                }
+            ]
+        }
+    },
+    "affected_packages": {
+        "werkzeug": {
+            "name": "werkzeug",
+            "version": "3.0.1",
+            "requirements": [
+                {
+                    "raw": "werkzeug==3.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "werkzeug",
+                    "specifier": "==3.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.1",
+                "0.10",
+                "0.10.1",
+                "0.10.2",
+                "0.10.3",
+                "0.10.4",
+                "0.11",
+                "0.11.1",
+                "0.11.10",
+                "0.11.11",
+                "0.11.12",
+                "0.11.13",
+                "0.11.14",
+                "0.11.15",
+                "0.11.2",
+                "0.11.3",
+                "0.11.4",
+                "0.11.5",
+                "0.11.6",
+                "0.11.7",
+                "0.11.8",
+                "0.11.9",
+                "0.12",
+                "0.12.1",
+                "0.12.2",
+                "0.13",
+                "0.14",
+                "0.14.1",
+                "0.15.0",
+                "0.15.1",
+                "0.15.2",
+                "0.15.3",
+                "0.15.4",
+                "0.15.5",
+                "0.15.6",
+                "0.16.0",
+                "0.16.1",
+                "0.2",
+                "0.3",
+                "0.3.1",
+                "0.4",
+                "0.4.1",
+                "0.5",
+                "0.5.1",
+                "0.6",
+                "0.6.1",
+                "0.6.2",
+                "0.7",
+                "0.7.1",
+                "0.7.2",
+                "0.8",
+                "0.8.1",
+                "0.8.2",
+                "0.8.3",
+                "0.9",
+                "0.9.1",
+                "0.9.2",
+                "0.9.3",
+                "0.9.4",
+                "0.9.5",
+                "0.9.6",
+                "1.0.0",
+                "1.0.0rc1",
+                "1.0.1",
+                "2.0.0",
+                "2.0.0rc1",
+                "2.0.0rc2",
+                "2.0.0rc3",
+                "2.0.0rc4",
+                "2.0.0rc5",
+                "2.0.1",
+                "2.0.2",
+                "2.0.3",
+                "2.1.0",
+                "2.1.1",
+                "2.1.2",
+                "2.2.0",
+                "2.2.0a1",
+                "2.2.1",
+                "2.2.2",
+                "2.2.3",
+                "2.3.0",
+                "2.3.1",
+                "2.3.2",
+                "2.3.3",
+                "2.3.4",
+                "2.3.5",
+                "2.3.6",
+                "2.3.7",
+                "2.3.8",
+                "3.0.0",
+                "3.0.1",
+                "3.0.2",
+                "3.0.3",
+                "3.0.4",
+                "3.0.5"
+            ],
+            "secure_versions": [
+                "3.1.3",
+                "3.1.2",
+                "3.1.1",
+                "3.1.0",
+                "3.0.6"
+            ],
+            "latest_version_without_known_vulnerabilities": "3.1.3",
+            "latest_version": "3.1.3",
+            "more_info_url": "https://data.safetycli.com/p/pypi/werkzeug/97c/"
+        },
+        "virtualenv": {
+            "name": "virtualenv",
+            "version": "20.25.0",
+            "requirements": [
+                {
+                    "raw": "virtualenv==20.25.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "virtualenv",
+                    "specifier": "==20.25.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.8",
+                "0.8.1",
+                "0.8.2",
+                "0.8.3",
+                "0.8.4",
+                "0.9",
+                "0.9.1",
+                "0.9.2",
+                "1.0",
+                "1.1",
+                "1.10",
+                "1.10.1",
+                "1.11",
+                "1.11.1",
+                "1.11.2",
+                "1.11.3",
+                "1.11.4",
+                "1.11.5",
+                "1.11.6",
+                "1.2",
+                "12.0",
+                "12.0.1",
+                "12.0.2",
+                "12.0.4",
+                "12.0.5",
+                "12.0.6",
+                "12.0.7",
+                "12.1.0",
+                "12.1.1",
+                "1.3",
+                "13.0.0",
+                "13.0.1",
+                "13.0.2",
+                "13.0.3",
+                "1.3.1",
+                "13.1.0",
+                "13.1.1",
+                "13.1.2",
+                "1.3.2",
+                "1.3.3",
+                "1.3.4",
+                "1.4",
+                "14.0.0",
+                "14.0.1",
+                "14.0.2",
+                "14.0.3",
+                "14.0.4",
+                "14.0.5",
+                "14.0.6",
+                "1.4.1",
+                "1.4.2",
+                "1.4.3",
+                "1.4.4",
+                "1.4.5",
+                "1.4.6",
+                "1.4.7",
+                "1.4.8",
+                "1.4.9",
+                "1.4rc1",
+                "1.5",
+                "15.0.0",
+                "15.0.1",
+                "15.0.2",
+                "15.0.3",
+                "1.5.1",
+                "15.1.0",
+                "1.5.2",
+                "15.2.0",
+                "1.6",
+                "16.0.0",
+                "1.6.1",
+                "16.1.0",
+                "1.6.2",
+                "16.2.0",
+                "1.6.3",
+                "16.3.0",
+                "16.3.1.dev0",
+                "1.6.4",
+                "16.4.0",
+                "16.4.1",
+                "16.4.3",
+                "16.4.4.dev0",
+                "16.5.0",
+                "16.6.0",
+                "16.6.1",
+                "16.6.2",
+                "16.7.0",
+                "16.7.1",
+                "16.7.10",
+                "16.7.11",
+                "16.7.12",
+                "16.7.2",
+                "16.7.3",
+                "16.7.4",
+                "16.7.5",
+                "16.7.6",
+                "16.7.7",
+                "16.7.8",
+                "16.7.9",
+                "1.7",
+                "1.7.1",
+                "1.7.1.1",
+                "1.7.1.2",
+                "1.7.2",
+                "1.8",
+                "1.8.1",
+                "1.8.2",
+                "1.8.3",
+                "1.8.4",
+                "1.9",
+                "1.9.1",
+                "20.0.0",
+                "20.0.0b1",
+                "20.0.0b2",
+                "20.0.1",
+                "20.0.10",
+                "20.0.11",
+                "20.0.12",
+                "20.0.13",
+                "20.0.14",
+                "20.0.15",
+                "20.0.16",
+                "20.0.17",
+                "20.0.18",
+                "20.0.19",
+                "20.0.2",
+                "20.0.20",
+                "20.0.21",
+                "20.0.22",
+                "20.0.23",
+                "20.0.24",
+                "20.0.25",
+                "20.0.26",
+                "20.0.27",
+                "20.0.28",
+                "20.0.29",
+                "20.0.3",
+                "20.0.30",
+                "20.0.31",
+                "20.0.32",
+                "20.0.33",
+                "20.0.34",
+                "20.0.35",
+                "20.0.4",
+                "20.0.5",
+                "20.0.6",
+                "20.0.7",
+                "20.0.8",
+                "20.0.9",
+                "20.1.0",
+                "20.10.0",
+                "20.11.0",
+                "20.11.1",
+                "20.11.2",
+                "20.12.0",
+                "20.12.1",
+                "20.13.0",
+                "20.13.1",
+                "20.13.2",
+                "20.13.3",
+                "20.13.4",
+                "20.14.0",
+                "20.14.1",
+                "20.15.0",
+                "20.15.1",
+                "20.16.0",
+                "20.16.1",
+                "20.16.2",
+                "20.16.3",
+                "20.16.4",
+                "20.16.5",
+                "20.16.6",
+                "20.16.7",
+                "20.17.0",
+                "20.17.1",
+                "20.18.0",
+                "20.19.0",
+                "20.2.0",
+                "20.20.0",
+                "20.2.1",
+                "20.21.0",
+                "20.21.1",
+                "20.2.2",
+                "20.22.0",
+                "20.23.0",
+                "20.23.1",
+                "20.24.0",
+                "20.24.1",
+                "20.24.2",
+                "20.24.3",
+                "20.24.4",
+                "20.24.5",
+                "20.24.6",
+                "20.24.7",
+                "20.25.0",
+                "20.25.1",
+                "20.25.2",
+                "20.25.3",
+                "20.26.0",
+                "20.26.1",
+                "20.26.2",
+                "20.26.3",
+                "20.26.4",
+                "20.26.5",
+                "20.3.0",
+                "20.3.1",
+                "20.4.0",
+                "20.4.1",
+                "20.4.2",
+                "20.4.3",
+                "20.4.4",
+                "20.4.5",
+                "20.4.6",
+                "20.4.7",
+                "20.5.0",
+                "20.6.0",
+                "20.7.0",
+                "20.7.1",
+                "20.7.2",
+                "20.8.0",
+                "20.8.1",
+                "20.9.0"
+            ],
+            "secure_versions": [
+                "20.31.2",
+                "20.31.1",
+                "20.31.0",
+                "20.30.0",
+                "20.29.3",
+                "20.29.2",
+                "20.29.1",
+                "20.29.0",
+                "20.28.1",
+                "20.28.0",
+                "20.27.1",
+                "20.27.0",
+                "20.26.6"
+            ],
+            "latest_version_without_known_vulnerabilities": "20.31.2",
+            "latest_version": "20.31.2",
+            "more_info_url": "https://data.safetycli.com/p/pypi/virtualenv/97c/"
+        },
+        "tornado": {
+            "name": "tornado",
+            "version": "6.4",
+            "requirements": [
+                {
+                    "raw": "tornado==6.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "tornado",
+                    "specifier": "==6.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.2",
+                "1.0",
+                "1.1",
+                "1.1.1",
+                "1.2",
+                "1.2.1",
+                "2.0",
+                "2.1",
+                "2.1.1",
+                "2.2",
+                "2.2.1",
+                "2.3",
+                "2.4",
+                "2.4.1",
+                "3.0",
+                "3.0.1",
+                "3.0.2",
+                "3.1",
+                "3.1.1",
+                "3.2",
+                "3.2.1",
+                "3.2.2",
+                "4.0",
+                "4.0.1",
+                "4.0.2",
+                "4.1",
+                "4.1b2",
+                "4.2",
+                "4.2.1",
+                "4.2b1",
+                "4.3",
+                "4.3b1",
+                "4.3b2",
+                "4.4",
+                "4.4.1",
+                "4.4.2",
+                "4.4.3",
+                "4.4b1",
+                "4.5",
+                "4.5.1",
+                "4.5.2",
+                "4.5.3",
+                "4.5b1",
+                "4.5b2",
+                "5.0",
+                "5.0.1",
+                "5.0.2",
+                "5.0a1",
+                "5.0b1",
+                "5.1",
+                "5.1.1",
+                "5.1b1",
+                "6.0",
+                "6.0.1",
+                "6.0.2",
+                "6.0.3",
+                "6.0.4",
+                "6.0a1",
+                "6.0b1",
+                "6.1",
+                "6.1b1",
+                "6.1b2",
+                "6.2",
+                "6.2b1",
+                "6.2b2",
+                "6.3",
+                "6.3.1",
+                "6.3.2",
+                "6.3.3",
+                "6.3b1",
+                "6.4",
+                "6.4.1",
+                "6.4.2",
+                "6.4b1",
+                "6.5b1"
+            ],
+            "secure_versions": [
+                "6.5.1",
+                "6.5"
+            ],
+            "latest_version_without_known_vulnerabilities": "6.5.1",
+            "latest_version": "6.5.1",
+            "more_info_url": "https://data.safetycli.com/p/pypi/tornado/97c/"
+        },
+        "sqlparse": {
+            "name": "sqlparse",
+            "version": "0.4.4",
+            "requirements": [
+                {
+                    "raw": "sqlparse==0.4.4",
+                    "extras": [],
+                    "marker": null,
+                    "name": "sqlparse",
+                    "specifier": "==0.4.4",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.1.0",
+                "0.1.1",
+                "0.1.10",
+                "0.1.11",
+                "0.1.12",
+                "0.1.13",
+                "0.1.14",
+                "0.1.15",
+                "0.1.16",
+                "0.1.17",
+                "0.1.18",
+                "0.1.19",
+                "0.1.2",
+                "0.1.3",
+                "0.1.4",
+                "0.1.5",
+                "0.1.6",
+                "0.1.7",
+                "0.1.8",
+                "0.1.9",
+                "0.2.0",
+                "0.2.1",
+                "0.2.2",
+                "0.2.3",
+                "0.2.4",
+                "0.3.0",
+                "0.3.1",
+                "0.4.0",
+                "0.4.1",
+                "0.4.2",
+                "0.4.3",
+                "0.4.4"
+            ],
+            "secure_versions": [
+                "0.5.3",
+                "0.5.2",
+                "0.5.1",
+                "0.5.0"
+            ],
+            "latest_version_without_known_vulnerabilities": "0.5.3",
+            "latest_version": "0.5.3",
+            "more_info_url": "https://data.safetycli.com/p/pypi/sqlparse/97c/"
+        },
+        "requests": {
+            "name": "requests",
+            "version": "2.31.0",
+            "requirements": [
+                {
+                    "raw": "requests==2.31.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "requests",
+                    "specifier": "==2.31.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.0.1",
+                "0.10.0",
+                "0.10.1",
+                "0.10.2",
+                "0.10.3",
+                "0.10.4",
+                "0.10.6",
+                "0.10.7",
+                "0.10.8",
+                "0.11.1",
+                "0.11.2",
+                "0.12.0",
+                "0.12.1",
+                "0.13.0",
+                "0.13.1",
+                "0.13.2",
+                "0.13.3",
+                "0.13.4",
+                "0.13.5",
+                "0.13.6",
+                "0.13.7",
+                "0.13.8",
+                "0.13.9",
+                "0.14.0",
+                "0.14.1",
+                "0.14.2",
+                "0.2.0",
+                "0.2.1",
+                "0.2.2",
+                "0.2.3",
+                "0.2.4",
+                "0.3.0",
+                "0.3.1",
+                "0.3.2",
+                "0.3.3",
+                "0.3.4",
+                "0.4.0",
+                "0.4.1",
+                "0.5.0",
+                "0.5.1",
+                "0.6.0",
+                "0.6.1",
+                "0.6.2",
+                "0.6.3",
+                "0.6.4",
+                "0.6.5",
+                "0.6.6",
+                "0.7.0",
+                "0.7.1",
+                "0.7.2",
+                "0.7.3",
+                "0.7.4",
+                "0.7.5",
+                "0.7.6",
+                "0.8.0",
+                "0.8.1",
+                "0.8.2",
+                "0.8.3",
+                "0.8.4",
+                "0.8.5",
+                "0.8.6",
+                "0.8.7",
+                "0.8.8",
+                "0.8.9",
+                "0.9.0",
+                "0.9.1",
+                "0.9.2",
+                "0.9.3",
+                "1.0.0",
+                "1.0.1",
+                "1.0.2",
+                "1.0.3",
+                "1.0.4",
+                "1.1.0",
+                "1.2.0",
+                "1.2.1",
+                "1.2.2",
+                "1.2.3",
+                "2.0.0",
+                "2.0.1",
+                "2.1.0",
+                "2.10.0",
+                "2.11.0",
+                "2.11.1",
+                "2.12.0",
+                "2.12.1",
+                "2.12.2",
+                "2.12.3",
+                "2.12.4",
+                "2.12.5",
+                "2.13.0",
+                "2.14.0",
+                "2.14.1",
+                "2.14.2",
+                "2.15.0",
+                "2.15.1",
+                "2.16.0",
+                "2.16.1",
+                "2.16.2",
+                "2.16.3",
+                "2.16.4",
+                "2.16.5",
+                "2.17.0",
+                "2.17.1",
+                "2.17.2",
+                "2.17.3",
+                "2.18.0",
+                "2.18.1",
+                "2.18.2",
+                "2.18.3",
+                "2.18.4",
+                "2.19.0",
+                "2.19.1",
+                "2.2.0",
+                "2.20.0",
+                "2.20.1",
+                "2.2.1",
+                "2.21.0",
+                "2.22.0",
+                "2.23.0",
+                "2.24.0",
+                "2.25.0",
+                "2.25.1",
+                "2.26.0",
+                "2.27.0",
+                "2.27.1",
+                "2.28.0",
+                "2.28.1",
+                "2.28.2",
+                "2.29.0",
+                "2.3.0",
+                "2.30.0",
+                "2.31.0",
+                "2.32.0",
+                "2.32.1",
+                "2.32.2",
+                "2.32.3",
+                "2.4.0",
+                "2.4.1",
+                "2.4.2",
+                "2.4.3",
+                "2.5.0",
+                "2.5.1",
+                "2.5.2",
+                "2.5.3",
+                "2.6.0",
+                "2.6.1",
+                "2.6.2",
+                "2.7.0",
+                "2.8.0",
+                "2.8.1",
+                "2.9.0",
+                "2.9.1",
+                "2.9.2"
+            ],
+            "secure_versions": [
+                "2.32.4"
+            ],
+            "latest_version_without_known_vulnerabilities": "2.32.4",
+            "latest_version": "2.32.4",
+            "more_info_url": "https://data.safetycli.com/p/pypi/requests/97c/"
+        },
+        "pypdf2": {
+            "name": "pypdf2",
+            "version": "3.0.1",
+            "requirements": [
+                {
+                    "raw": "pypdf2==3.0.1",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pypdf2",
+                    "specifier": "==3.0.1",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "1.15",
+                "1.16",
+                "1.17",
+                "1.18",
+                "1.19",
+                "1.20",
+                "1.21",
+                "1.22",
+                "1.23",
+                "1.24",
+                "1.25",
+                "1.25.1",
+                "1.26.0",
+                "1.27.0",
+                "1.27.1",
+                "1.27.10",
+                "1.27.11",
+                "1.27.12",
+                "1.27.2",
+                "1.27.3",
+                "1.27.4",
+                "1.27.5",
+                "1.27.6",
+                "1.27.7",
+                "1.27.8",
+                "1.27.9",
+                "1.28.0",
+                "1.28.1",
+                "1.28.2",
+                "1.28.3",
+                "1.28.4",
+                "1.28.5",
+                "1.28.6",
+                "2.0.0",
+                "2.1.0",
+                "2.10.0",
+                "2.10.1",
+                "2.10.2",
+                "2.10.3",
+                "2.10.4",
+                "2.10.5",
+                "2.10.6",
+                "2.10.7",
+                "2.10.8",
+                "2.10.9",
+                "2.1.1",
+                "2.11.0",
+                "2.11.1",
+                "2.11.2",
+                "2.12.0",
+                "2.12.1",
+                "2.2.0",
+                "2.2.1",
+                "2.3.0",
+                "2.3.1",
+                "2.4.0",
+                "2.4.1",
+                "2.4.2",
+                "2.5.0",
+                "2.6.0",
+                "2.7.0",
+                "2.8.0",
+                "2.8.1",
+                "2.9.0",
+                "3.0.0",
+                "3.0.1"
+            ],
+            "secure_versions": [],
+            "latest_version_without_known_vulnerabilities": "",
+            "latest_version": "3.0.1",
+            "more_info_url": "https://data.safetycli.com/p/pypi/pypdf2/97c/"
+        },
+        "flask": {
+            "name": "flask",
+            "version": "2.3.3",
+            "requirements": [
+                {
+                    "raw": "flask==2.3.3",
+                    "extras": [],
+                    "marker": null,
+                    "name": "flask",
+                    "specifier": "==2.3.3",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "0.1",
+                "0.10",
+                "0.10.1",
+                "0.11",
+                "0.11.1",
+                "0.12",
+                "0.12.1",
+                "0.12.2",
+                "0.12.3",
+                "0.12.4",
+                "0.12.5",
+                "0.2",
+                "0.3",
+                "0.3.1",
+                "0.4",
+                "0.5",
+                "0.5.1",
+                "0.5.2",
+                "0.6",
+                "0.6.1",
+                "0.7",
+                "0.7.1",
+                "0.7.2",
+                "0.8",
+                "0.8.1",
+                "0.9",
+                "1.0",
+                "1.0.1",
+                "1.0.2",
+                "1.0.3",
+                "1.0.4",
+                "1.1.0",
+                "1.1.1",
+                "1.1.2",
+                "1.1.3",
+                "1.1.4",
+                "2.0.0",
+                "2.0.0rc1",
+                "2.0.0rc2",
+                "2.0.1",
+                "2.0.2",
+                "2.0.3",
+                "2.1.0",
+                "2.1.1",
+                "2.1.2",
+                "2.1.3",
+                "2.2.0",
+                "2.2.1",
+                "2.2.2",
+                "2.2.3",
+                "2.2.4",
+                "2.2.5",
+                "2.3.0",
+                "2.3.1",
+                "2.3.2",
+                "2.3.3",
+                "3.0.0",
+                "3.0.1",
+                "3.0.2",
+                "3.0.3",
+                "3.1.0"
+            ],
+            "secure_versions": [
+                "3.1.1"
+            ],
+            "latest_version_without_known_vulnerabilities": "3.1.1",
+            "latest_version": "3.1.1",
+            "more_info_url": "https://data.safetycli.com/p/pypi/flask/97c/"
+        },
+        "pillow": {
+            "name": "pillow",
+            "version": "10.1.0",
+            "requirements": [
+                {
+                    "raw": "pillow==10.1.0",
+                    "extras": [],
+                    "marker": null,
+                    "name": "pillow",
+                    "specifier": "==10.1.0",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "1.0",
+                "10.0.0",
+                "10.0.1",
+                "10.1.0",
+                "10.2.0",
+                "1.1",
+                "11.2.1",
+                "1.2",
+                "1.3",
+                "1.4",
+                "1.5",
+                "1.6",
+                "1.7.0",
+                "1.7.1",
+                "1.7.2",
+                "1.7.3",
+                "1.7.4",
+                "1.7.5",
+                "1.7.6",
+                "1.7.7",
+                "1.7.8",
+                "2.0.0",
+                "2.1.0",
+                "2.2.0",
+                "2.2.1",
+                "2.2.2",
+                "2.3.0",
+                "2.3.1",
+                "2.3.2",
+                "2.4.0",
+                "2.5.0",
+                "2.5.1",
+                "2.5.2",
+                "2.5.3",
+                "2.6.0",
+                "2.6.1",
+                "2.6.2",
+                "2.7.0",
+                "2.8.0",
+                "2.8.1",
+                "2.8.2",
+                "2.9.0",
+                "3.0.0",
+                "3.1.0",
+                "3.1.0rc1",
+                "3.1.1",
+                "3.1.2",
+                "3.2.0",
+                "3.3.0",
+                "3.3.1",
+                "3.3.2",
+                "3.3.3",
+                "3.4.0",
+                "3.4.1",
+                "3.4.2",
+                "4.0.0",
+                "4.1.0",
+                "4.1.1",
+                "4.2.0",
+                "4.2.1",
+                "4.3.0",
+                "5.0.0",
+                "5.1.0",
+                "5.2.0",
+                "5.3.0",
+                "5.4.0",
+                "5.4.0.dev0",
+                "5.4.1",
+                "6.0.0",
+                "6.1.0",
+                "6.2.0",
+                "6.2.1",
+                "6.2.2",
+                "7.0.0",
+                "7.1.0",
+                "7.1.1",
+                "7.1.2",
+                "7.2.0",
+                "8.0.0",
+                "8.0.1",
+                "8.1.0",
+                "8.1.1",
+                "8.1.2",
+                "8.2.0",
+                "8.3.0",
+                "8.3.1",
+                "8.3.2",
+                "8.4.0",
+                "9.0.0",
+                "9.0.1",
+                "9.1.0",
+                "9.1.1",
+                "9.2.0",
+                "9.3.0",
+                "9.4.0",
+                "9.5.0"
+            ],
+            "secure_versions": [
+                "11.3.0",
+                "11.1.0",
+                "11.0.0",
+                "10.4.0",
+                "10.3.0"
+            ],
+            "latest_version_without_known_vulnerabilities": "11.3.0",
+            "latest_version": "11.3.0",
+            "more_info_url": "https://data.safetycli.com/p/pypi/pillow/97c/"
+        },
+        "jinja2": {
+            "name": "jinja2",
+            "version": "3.1.2",
+            "requirements": [
+                {
+                    "raw": "jinja2==3.1.2",
+                    "extras": [],
+                    "marker": null,
+                    "name": "jinja2",
+                    "specifier": "==3.1.2",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "2.0",
+                "2.0rc1",
+                "2.1",
+                "2.10",
+                "2.10.1",
+                "2.10.2",
+                "2.10.3",
+                "2.1.1",
+                "2.11.0",
+                "2.11.1",
+                "2.11.2",
+                "2.11.3",
+                "2.2",
+                "2.2.1",
+                "2.3",
+                "2.3.1",
+                "2.4",
+                "2.4.1",
+                "2.5",
+                "2.5.1",
+                "2.5.2",
+                "2.5.3",
+                "2.5.4",
+                "2.5.5",
+                "2.6",
+                "2.7",
+                "2.7.1",
+                "2.7.2",
+                "2.7.3",
+                "2.8",
+                "2.8.1",
+                "2.9",
+                "2.9.1",
+                "2.9.2",
+                "2.9.3",
+                "2.9.4",
+                "2.9.5",
+                "2.9.6",
+                "3.0.0",
+                "3.0.0a1",
+                "3.0.0rc1",
+                "3.0.0rc2",
+                "3.0.1",
+                "3.0.2",
+                "3.0.3",
+                "3.1.0",
+                "3.1.1",
+                "3.1.2",
+                "3.1.3",
+                "3.1.4",
+                "3.1.5"
+            ],
+            "secure_versions": [
+                "3.1.6"
+            ],
+            "latest_version_without_known_vulnerabilities": "3.1.6",
+            "latest_version": "3.1.6",
+            "more_info_url": "https://data.safetycli.com/p/pypi/jinja2/97c/"
+        },
+        "django": {
+            "name": "django",
+            "version": "4.2.7",
+            "requirements": [
+                {
+                    "raw": "django==4.2.7",
+                    "extras": [],
+                    "marker": null,
+                    "name": "django",
+                    "specifier": "==4.2.7",
+                    "url": null,
+                    "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                }
+            ],
+            "found": null,
+            "insecure_versions": [
+                "1.0.1",
+                "1.0.2",
+                "1.0.3",
+                "1.0.4",
+                "1.1",
+                "1.10",
+                "1.10.1",
+                "1.10.2",
+                "1.10.3",
+                "1.10.4",
+                "1.10.5",
+                "1.10.6",
+                "1.10.7",
+                "1.10.8",
+                "1.10a1",
+                "1.10b1",
+                "1.10rc1",
+                "1.11",
+                "1.1.1",
+                "1.11.1",
+                "1.11.10",
+                "1.11.11",
+                "1.11.12",
+                "1.11.13",
+                "1.11.14",
+                "1.11.15",
+                "1.11.16",
+                "1.11.17",
+                "1.11.18",
+                "1.11.2",
+                "1.11.20",
+                "1.11.21",
+                "1.11.22",
+                "1.11.23",
+                "1.11.24",
+                "1.11.25",
+                "1.11.26",
+                "1.11.27",
+                "1.11.28",
+                "1.11.29",
+                "1.11.3",
+                "1.11.4",
+                "1.11.5",
+                "1.11.6",
+                "1.11.7",
+                "1.11.8",
+                "1.11.9",
+                "1.11a1",
+                "1.11b1",
+                "1.11rc1",
+                "1.1.2",
+                "1.1.3",
+                "1.1.4",
+                "1.2",
+                "1.2.1",
+                "1.2.2",
+                "1.2.3",
+                "1.2.4",
+                "1.2.5",
+                "1.2.6",
+                "1.2.7",
+                "1.3",
+                "1.3.1",
+                "1.3.2",
+                "1.3.3",
+                "1.3.4",
+                "1.3.5",
+                "1.3.6",
+                "1.3.7",
+                "1.4",
+                "1.4.1",
+                "1.4.10",
+                "1.4.11",
+                "1.4.12",
+                "1.4.13",
+                "1.4.14",
+                "1.4.15",
+                "1.4.16",
+                "1.4.17",
+                "1.4.18",
+                "1.4.19",
+                "1.4.2",
+                "1.4.20",
+                "1.4.21",
+                "1.4.22",
+                "1.4.3",
+                "1.4.4",
+                "1.4.5",
+                "1.4.6",
+                "1.4.7",
+                "1.4.8",
+                "1.4.9",
+                "1.5",
+                "1.5.1",
+                "1.5.10",
+                "1.5.11",
+                "1.5.12",
+                "1.5.2",
+                "1.5.3",
+                "1.5.4",
+                "1.5.5",
+                "1.5.6",
+                "1.5.7",
+                "1.5.8",
+                "1.5.9",
+                "1.6",
+                "1.6.1",
+                "1.6.10",
+                "1.6.11",
+                "1.6.2",
+                "1.6.3",
+                "1.6.4",
+                "1.6.5",
+                "1.6.6",
+                "1.6.7",
+                "1.6.8",
+                "1.6.9",
+                "1.7",
+                "1.7.1",
+                "1.7.10",
+                "1.7.11",
+                "1.7.2",
+                "1.7.3",
+                "1.7.4",
+                "1.7.5",
+                "1.7.6",
+                "1.7.7",
+                "1.7.8",
+                "1.7.9",
+                "1.8",
+                "1.8.1",
+                "1.8.10",
+                "1.8.11",
+                "1.8.12",
+                "1.8.13",
+                "1.8.14",
+                "1.8.15",
+                "1.8.16",
+                "1.8.17",
+                "1.8.18",
+                "1.8.19",
+                "1.8.2",
+                "1.8.3",
+                "1.8.4",
+                "1.8.5",
+                "1.8.6",
+                "1.8.7",
+                "1.8.8",
+                "1.8.9",
+                "1.8a1",
+                "1.8b1",
+                "1.8b2",
+                "1.8rc1",
+                "1.9",
+                "1.9.1",
+                "1.9.10",
+                "1.9.11",
+                "1.9.12",
+                "1.9.13",
+                "1.9.2",
+                "1.9.3",
+                "1.9.4",
+                "1.9.5",
+                "1.9.6",
+                "1.9.7",
+                "1.9.8",
+                "1.9.9",
+                "1.9a1",
+                "1.9b1",
+                "1.9rc1",
+                "1.9rc2",
+                "2.0",
+                "2.0.1",
+                "2.0.10",
+                "2.0.12",
+                "2.0.13",
+                "2.0.2",
+                "2.0.3",
+                "2.0.4",
+                "2.0.5",
+                "2.0.6",
+                "2.0.7",
+                "2.0.8",
+                "2.0.9",
+                "2.0a1",
+                "2.0b1",
+                "2.0rc1",
+                "2.1",
+                "2.1.1",
+                "2.1.10",
+                "2.1.11",
+                "2.1.12",
+                "2.1.13",
+                "2.1.14",
+                "2.1.15",
+                "2.1.2",
+                "2.1.3",
+                "2.1.4",
+                "2.1.5",
+                "2.1.7",
+                "2.1.8",
+                "2.1.9",
+                "2.1a1",
+                "2.1b1",
+                "2.1rc1",
+                "2.2",
+                "2.2.1",
+                "2.2.10",
+                "2.2.11",
+                "2.2.12",
+                "2.2.13",
+                "2.2.14",
+                "2.2.15",
+                "2.2.16",
+                "2.2.17",
+                "2.2.18",
+                "2.2.19",
+                "2.2.2",
+                "2.2.20",
+                "2.2.21",
+                "2.2.22",
+                "2.2.23",
+                "2.2.24",
+                "2.2.25",
+                "2.2.26",
+                "2.2.27",
+                "2.2.28",
+                "2.2.3",
+                "2.2.4",
+                "2.2.5",
+                "2.2.6",
+                "2.2.7",
+                "2.2.8",
+                "2.2.9",
+                "2.2a1",
+                "2.2b1",
+                "2.2rc1",
+                "3.0",
+                "3.0.1",
+                "3.0.10",
+                "3.0.11",
+                "3.0.12",
+                "3.0.13",
+                "3.0.14",
+                "3.0.2",
+                "3.0.3",
+                "3.0.4",
+                "3.0.5",
+                "3.0.6",
+                "3.0.7",
+                "3.0.8",
+                "3.0.9",
+                "3.0a1",
+                "3.0b1",
+                "3.0rc1",
+                "3.1",
+                "3.1.1",
+                "3.1.10",
+                "3.1.11",
+                "3.1.12",
+                "3.1.13",
+                "3.1.14",
+                "3.1.2",
+                "3.1.3",
+                "3.1.4",
+                "3.1.5",
+                "3.1.6",
+                "3.1.7",
+                "3.1.8",
+                "3.1.9",
+                "3.1a1",
+                "3.1b1",
+                "3.1rc1",
+                "3.2",
+                "3.2.1",
+                "3.2.10",
+                "3.2.11",
+                "3.2.12",
+                "3.2.13",
+                "3.2.14",
+                "3.2.15",
+                "3.2.16",
+                "3.2.17",
+                "3.2.18",
+                "3.2.19",
+                "3.2.2",
+                "3.2.20",
+                "3.2.21",
+                "3.2.22",
+                "3.2.23",
+                "3.2.24",
+                "3.2.25",
+                "3.2.3",
+                "3.2.4",
+                "3.2.5",
+                "3.2.6",
+                "3.2.7",
+                "3.2.8",
+                "3.2.9",
+                "3.2a1",
+                "3.2b1",
+                "3.2rc1",
+                "4.0",
+                "4.0.1",
+                "4.0.10",
+                "4.0.2",
+                "4.0.3",
+                "4.0.4",
+                "4.0.5",
+                "4.0.6",
+                "4.0.7",
+                "4.0.8",
+                "4.0.9",
+                "4.0a1",
+                "4.0b1",
+                "4.0rc1",
+                "4.1",
+                "4.1.1",
+                "4.1.10",
+                "4.1.11",
+                "4.1.12",
+                "4.1.13",
+                "4.1.2",
+                "4.1.3",
+                "4.1.4",
+                "4.1.5",
+                "4.1.6",
+                "4.1.7",
+                "4.1.8",
+                "4.1.9",
+                "4.1a1",
+                "4.1b1",
+                "4.1rc1",
+                "4.2",
+                "4.2.1",
+                "4.2.10",
+                "4.2.11",
+                "4.2.12",
+                "4.2.13",
+                "4.2.14",
+                "4.2.15",
+                "4.2.16",
+                "4.2.17",
+                "4.2.18",
+                "4.2.19",
+                "4.2.2",
+                "4.2.20",
+                "4.2.21",
+                "4.2.3",
+                "4.2.4",
+                "4.2.5",
+                "4.2.6",
+                "4.2.7",
+                "4.2.8",
+                "4.2.9",
+                "4.2a1",
+                "4.2b1",
+                "4.2rc1",
+                "5.0",
+                "5.0.1",
+                "5.0.10",
+                "5.0.11",
+                "5.0.12",
+                "5.0.13",
+                "5.0.14",
+                "5.0.2",
+                "5.0.3",
+                "5.0.4",
+                "5.0.5",
+                "5.0.6",
+                "5.0.7",
+                "5.0.8",
+                "5.0.9",
+                "5.0a1",
+                "5.0b1",
+                "5.0rc1",
+                "5.1",
+                "5.1.1",
+                "5.1.2",
+                "5.1.3",
+                "5.1.4",
+                "5.1.5",
+                "5.1.6",
+                "5.1.7",
+                "5.1.8",
+                "5.1.9",
+                "5.1a1",
+                "5.1b1",
+                "5.1rc1",
+                "5.2",
+                "5.2.1"
+            ],
+            "secure_versions": [
+                "5.2.4",
+                "5.2.3",
+                "5.2.2",
+                "5.2rc1",
+                "5.2b1",
+                "5.2a1",
+                "5.1.11",
+                "5.1.10",
+                "4.2.23",
+                "4.2.22"
+            ],
+            "latest_version_without_known_vulnerabilities": "5.2.4",
+            "latest_version": "5.2.4",
+            "more_info_url": "https://data.safetycli.com/p/pypi/django/97c/"
+        }
+    },
+    "announcements": [],
+    "vulnerabilities": [
+        {
+            "vulnerability_id": "71594",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.0.3"
+            ],
+            "all_vulnerable_specs": [
+                "<3.0.3"
+            ],
+            "analyzed_version": "3.0.1",
+            "analyzed_requirement": {
+                "raw": "werkzeug==3.0.1",
+                "extras": [],
+                "marker": null,
+                "name": "werkzeug",
+                "specifier": "==3.0.1",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Werkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-34069",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71594/97c"
+        },
+        {
+            "vulnerability_id": "73969",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.0.6"
+            ],
+            "all_vulnerable_specs": [
+                "<3.0.6"
+            ],
+            "analyzed_version": "3.0.1",
+            "analyzed_requirement": {
+                "raw": "werkzeug==3.0.1",
+                "extras": [],
+                "marker": null,
+                "name": "werkzeug",
+                "specifier": "==3.0.1",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Werkzeug are vulnerable to Path Traversal (CWE-22) on Windows systems running Python versions below 3.11. The safe_join() function failed to properly detect certain absolute paths on Windows, allowing attackers to potentially access files outside the intended directory. An attacker could craft special paths starting with \"/\" that bypass the directory restrictions on Windows systems. The vulnerability exists in the safe_join() function which relied solely on os.path.isabs() for path validation. This is exploitable on Windows systems by passing paths starting with \"/\" to safe_join(). To remediate, upgrade to the latest version which includes additional path validation checks. \r\nNOTE: This vulnerability specifically affects Windows systems running Python versions below 3.11 where ntpath.isabs() behavior differs.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-49766",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73969/97c"
+        },
+        {
+            "vulnerability_id": "73889",
+            "package_name": "werkzeug",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.0.6"
+            ],
+            "all_vulnerable_specs": [
+                "<3.0.6"
+            ],
+            "analyzed_version": "3.0.1",
+            "analyzed_requirement": {
+                "raw": "werkzeug==3.0.1",
+                "extras": [],
+                "marker": null,
+                "name": "werkzeug",
+                "specifier": "==3.0.1",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Werkzeug are potentially vulnerable to resource exhaustion when parsing file data in forms. Applications using 'werkzeug.formparser.MultiPartParser' to parse 'multipart/form-data' requests (e.g. all flask applications) are vulnerable to a relatively simple but effective resource exhaustion (denial of service) attack. A specifically crafted form submission request can cause the parser to allocate and block 3 to 8 times the upload size in main memory. There is no upper limit; a single upload at 1 Gbit/s can exhaust 32 GB of RAM in less than 60 seconds.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-49767",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73889/97c"
+        },
+        {
+            "vulnerability_id": "73456",
+            "package_name": "virtualenv",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<20.26.6"
+            ],
+            "all_vulnerable_specs": [
+                "<20.26.6"
+            ],
+            "analyzed_version": "20.25.0",
+            "analyzed_requirement": {
+                "raw": "virtualenv==20.25.0",
+                "extras": [],
+                "marker": null,
+                "name": "virtualenv",
+                "specifier": "==20.25.0",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of the virtualenv package are vulnerable to command injection. This vulnerability could allow an attacker to execute arbitrary commands by exploiting improperly quoted string placeholders in activation scripts. The vulnerable functions include various shell activation scripts where placeholders like __VIRTUAL_ENV__ are used. The exploitability depends on the ability to control the input to these placeholders. Users are advised to update to the version where a quoting mechanism has been implemented to mitigate this risk. This vulnerability is specific to environments where shell scripts are used for virtual environment activation. The issue is tracked under CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection').",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73456/97c"
+        },
+        {
+            "vulnerability_id": "71957",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<=6.4.0"
+            ],
+            "all_vulnerable_specs": [
+                "<=6.4.0"
+            ],
+            "analyzed_version": "6.4",
+            "analyzed_requirement": {
+                "raw": "tornado==6.4",
+                "extras": [],
+                "marker": null,
+                "name": "tornado",
+                "specifier": "==6.4",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "When Tornado receives a request with two Transfer-Encoding: chunked headers, it ignores them both. This enables request smuggling when Tornado is deployed behind a proxy server that emits such requests. Pound does this.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71957/97c"
+        },
+        {
+            "vulnerability_id": "71956",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<6.4.1"
+            ],
+            "all_vulnerable_specs": [
+                "<6.4.1"
+            ],
+            "analyzed_version": "6.4",
+            "analyzed_requirement": {
+                "raw": "tornado==6.4",
+                "extras": [],
+                "marker": null,
+                "name": "tornado",
+                "specifier": "==6.4",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Tornado\u2019s curl_httpclient.CurlAsyncHTTPClient class is vulnerable to CRLF (carriage return/line feed) injection in the request headers.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71956/97c"
+        },
+        {
+            "vulnerability_id": "77319",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<6.5.0"
+            ],
+            "all_vulnerable_specs": [
+                "<6.5.0"
+            ],
+            "analyzed_version": "6.4",
+            "analyzed_requirement": {
+                "raw": "tornado==6.4",
+                "extras": [],
+                "marker": null,
+                "name": "tornado",
+                "specifier": "==6.4",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "When Tornado's multipart/form-data parser encounters certain errors, it logs a warning but continues trying to parse the remainder of the data. This allows remote attackers to generate an extremely high volume of logs, constituting a DoS attack. This DoS is compounded by the fact that the logging subsystem is synchronous.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-47287",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77319/97c"
+        },
+        {
+            "vulnerability_id": "74439",
+            "package_name": "tornado",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<6.4.2"
+            ],
+            "all_vulnerable_specs": [
+                "<6.4.2"
+            ],
+            "analyzed_version": "6.4",
+            "analyzed_requirement": {
+                "raw": "tornado==6.4",
+                "extras": [],
+                "marker": null,
+                "name": "tornado",
+                "specifier": "==6.4",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Tornado web framework affected versions contain a performance vulnerability in their HTTP cookie parser. When processing specially crafted malicious cookie headers, the parser's algorithm can exhibit quadratic time complexity. Since this parsing happens in the main event loop thread, it can cause the server to become unresponsive and block the processing of other incoming requests due to excessive CPU usage.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-52804",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74439/97c"
+        },
+        {
+            "vulnerability_id": "67887",
+            "package_name": "sqlparse",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<0.5.0"
+            ],
+            "all_vulnerable_specs": [
+                "<0.5.0"
+            ],
+            "analyzed_version": "0.4.4",
+            "analyzed_requirement": {
+                "raw": "sqlparse==0.4.4",
+                "extras": [],
+                "marker": null,
+                "name": "sqlparse",
+                "specifier": "==0.4.4",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Sqlparse 0.5.0 addresses a potential denial of service (DoS) vulnerability related to recursion errors in deeply nested SQL statements. To mitigate this issue, the update replaces recursion errors with a general SQLParseError, improving the resilience and stability of the parsing process.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-4340",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/67887/97c"
+        },
+        {
+            "vulnerability_id": "71064",
+            "package_name": "requests",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<2.32.2"
+            ],
+            "all_vulnerable_specs": [
+                "<2.32.2"
+            ],
+            "analyzed_version": "2.31.0",
+            "analyzed_requirement": {
+                "raw": "requests==2.31.0",
+                "extras": [],
+                "marker": null,
+                "name": "requests",
+                "specifier": "==2.31.0",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Requests, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. Requests 2.32.0 fixes the issue, but versions 2.32.0 and 2.32.1 were yanked due to conflicts with CVE-2024-35195 mitigation.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-35195",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71064/97c"
+        },
+        {
+            "vulnerability_id": "59234",
+            "package_name": "pypdf2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                ">=2.2.0,<=3.0.1"
+            ],
+            "all_vulnerable_specs": [
+                ">=2.2.0,<=3.0.1"
+            ],
+            "analyzed_version": "3.0.1",
+            "analyzed_requirement": {
+                "raw": "pypdf2==3.0.1",
+                "extras": [],
+                "marker": null,
+                "name": "pypdf2",
+                "specifier": "==3.0.1",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Pypdf2 is vulnerable to CVE-2023-36464: An attacker may craft a PDF which leads to an infinite loop if '__parse_content_stream' is executed. That is, for example, the case if the user extracted text from such a PDF. Users may modify the line 'while peek not in (b\"\\r\", b\"\\n\")' in 'pypdf/generic/_data_structures.py' to 'while peek not in (b\"\\r\", b\"\\n\", b\"\")' as a workaround.\r\nhttps://github.com/py-pdf/pypdf/pull/1828\r\nhttps://github.com/py-pdf/pypdf/security/advisories/GHSA-4vvm-4w3v-6mr8",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2023-36464",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/59234/97c"
+        },
+        {
+            "vulnerability_id": "77323",
+            "package_name": "flask",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.1"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.1"
+            ],
+            "analyzed_version": "2.3.3",
+            "analyzed_requirement": {
+                "raw": "flask==2.3.3",
+                "extras": [],
+                "marker": null,
+                "name": "flask",
+                "specifier": "==2.3.3",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Flask (\u2264 3.1.0) are vulnerable to incorrect fallback key configuration in session signing, leading to stale key usage instead of the intended current key. This flaw undermines session integrity, enabling remote attackers to forge or tamper with cookies via manipulated SECRET_KEY_FALLBACKS parameters. The vulnerability exists in the itsdangerous-based signing routines within flask.sessions (fallback key list ordering).",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-47278",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77323/97c"
+        },
+        {
+            "vulnerability_id": "64437",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<10.2.0"
+            ],
+            "all_vulnerable_specs": [
+                "<10.2.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "analyzed_requirement": {
+                "raw": "pillow==10.1.0",
+                "extras": [],
+                "marker": null,
+                "name": "pillow",
+                "specifier": "==10.1.0",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Pillow is potentially vulnerable to DoS attacks through PIL.ImageFont.ImageFont.getmask(). A decompression bomb check has also been added to the affected function.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": null,
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64437/97c"
+        },
+        {
+            "vulnerability_id": "64436",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<10.2.0"
+            ],
+            "all_vulnerable_specs": [
+                "<10.2.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "analyzed_requirement": {
+                "raw": "pillow==10.1.0",
+                "extras": [],
+                "marker": null,
+                "name": "pillow",
+                "specifier": "==10.1.0",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Pillow is affected by an arbitrary code execution vulnerability. If an attacker has control over the keys passed to the environment argument of PIL.ImageMath.eval(), they may be able to execute arbitrary code.\r\nhttps://pillow.readthedocs.io/en/stable/releasenotes/10.2.0.html",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2023-50447",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64436/97c"
+        },
+        {
+            "vulnerability_id": "67136",
+            "package_name": "pillow",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<10.3.0"
+            ],
+            "all_vulnerable_specs": [
+                "<10.3.0"
+            ],
+            "analyzed_version": "10.1.0",
+            "analyzed_requirement": {
+                "raw": "pillow==10.1.0",
+                "extras": [],
+                "marker": null,
+                "name": "pillow",
+                "specifier": "==10.1.0",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Pillow 10.3.0 introduces a security update addressing CVE-2024-28219 by replacing certain functions with strncpy to prevent buffer overflow issues.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-28219",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/67136/97c"
+        },
+        {
+            "vulnerability_id": "64227",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.3"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.3"
+            ],
+            "analyzed_version": "3.1.2",
+            "analyzed_requirement": {
+                "raw": "jinja2==3.1.2",
+                "extras": [],
+                "marker": null,
+                "name": "jinja2",
+                "specifier": "==3.1.2",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Jinja is an extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. It is possible to inject arbitrary HTML attributes into the rendered HTML template, potentially leading to Cross-Site Scripting (XSS). The Jinja `xmlattr` filter can be abused to inject arbitrary HTML attribute keys and values, bypassing the auto escaping mechanism and potentially leading to XSS. It may also be possible to bypass attribute validation checks if they are blacklist-based.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-22195",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64227/97c"
+        },
+        {
+            "vulnerability_id": "71591",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.4"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.4"
+            ],
+            "analyzed_version": "3.1.2",
+            "analyzed_requirement": {
+                "raw": "jinja2==3.1.2",
+                "extras": [],
+                "marker": null,
+                "name": "jinja2",
+                "specifier": "==3.1.2",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Jinja is an extensible templating engine. The `xmlattr` filter in affected versions of Jinja accepts keys containing non-attribute characters. XML/HTML attributes cannot contain spaces, `/`, `>`, or `=`, as each would then be interpreted as starting a separate attribute. If an application accepts keys (as opposed to only values) as user input, and renders these in pages that other users see as well, an attacker could use this to inject other attributes and perform XSS. The fix for CVE-2024-22195 only addressed spaces but not other characters. Accepting keys as user input is now explicitly considered an unintended use case of the `xmlattr` filter, and code that does so without otherwise validating the input should be flagged as insecure, regardless of Jinja version. Accepting _values_ as user input continues to be safe.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-34064",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/71591/97c"
+        },
+        {
+            "vulnerability_id": "75976",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.6"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.6"
+            ],
+            "analyzed_version": "3.1.2",
+            "analyzed_requirement": {
+                "raw": "jinja2==3.1.2",
+                "extras": [],
+                "marker": null,
+                "name": "jinja2",
+                "specifier": "==3.1.2",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Prior to 3.1.6, an oversight in how the Jinja sandboxed environment interacts with the |attr filter allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to use the |attr filter to get a reference to a string's plain format method, bypassing the sandbox. After the fix, the |attr filter no longer bypasses the environment's attribute lookup. This vulnerability is fixed in 3.1.6.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-27516",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/75976/97c"
+        },
+        {
+            "vulnerability_id": "76378",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.5"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.5"
+            ],
+            "analyzed_version": "3.1.2",
+            "analyzed_requirement": {
+                "raw": "jinja2==3.1.2",
+                "extras": [],
+                "marker": null,
+                "name": "jinja2",
+                "specifier": "==3.1.2",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker who controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to store a reference to a malicious string's format method, then pass that to a filter that calls it. No such filters are built-in to Jinja, but could be present through custom filters in an application. After the fix, such indirect calls are also handled by the sandbox.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56326",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/76378/97c"
+        },
+        {
+            "vulnerability_id": "74735",
+            "package_name": "jinja2",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<3.1.5"
+            ],
+            "all_vulnerable_specs": [
+                "<3.1.5"
+            ],
+            "analyzed_version": "3.1.2",
+            "analyzed_requirement": {
+                "raw": "jinja2==3.1.2",
+                "extras": [],
+                "marker": null,
+                "name": "jinja2",
+                "specifier": "==3.1.2",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "A vulnerability in the Jinja compiler allows an attacker who can control both the content and filename of a template to execute arbitrary Python code, bypassing Jinja's sandbox protections. To exploit this vulnerability, an attacker must have the ability to manipulate both the template's filename and its contents. The risk depends on the application's specific use case. This issue affects applications that render untrusted templates where the attacker can determine the template filename, potentially leading to severe security breaches.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56201",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74735/97c"
+        },
+        {
+            "vulnerability_id": "64976",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                ">=4.0a1,<4.2.10"
+            ],
+            "all_vulnerable_specs": [
+                "<3.2.24",
+                ">=4.0a1,<4.2.10",
+                ">=5.0a1,<5.0.2"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are vulnerable to potential denial-of-service in intcomma template filter when used with very long strings.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-24680",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/64976/97c"
+        },
+        {
+            "vulnerability_id": "73023",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.16"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.16",
+                ">=5.0a1,<5.0.9",
+                ">=5.1a1,<5.1.1"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "A potential denial-of-service vulnerability has been identified in Django's urlize() and urlizetrunc() functions in django.utils.html. This vulnerability can be triggered by inputting huge strings containing a specific sequence of characters.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-45230",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73023/97c"
+        },
+        {
+            "vulnerability_id": "73028",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.16"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.16",
+                ">=5.0a1,<5.0.9",
+                ">=5.1a1,<5.1.1"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "A security vulnerability has been discovered in certain versions of Django, affecting the password reset functionality. The PasswordResetForm class in django.contrib.auth.forms inadvertently allowed attackers to enumerate user email addresses by exploiting unhandled exceptions during the email sending process. This could be done by issuing password reset requests and observing the responses. Django has implemented a fix where these exceptions are now caught and logged using the django.contrib.auth logger, preventing potential information leakage through error responses.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-45231",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/73028/97c"
+        },
+        {
+            "vulnerability_id": "75744",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.20"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.20",
+                ">=5.0a1,<5.0.13",
+                ">=5.1a1,<5.1.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service in django.utils.text.wrap(). The django.utils.text.wrap() and wordwrap template filter were subject to a potential denial-of-service attack when used with very long strings.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-26699",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/75744/97c"
+        },
+        {
+            "vulnerability_id": "65771",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                ">=4.0a1,<4.2.11"
+            ],
+            "all_vulnerable_specs": [
+                "<3.2.25",
+                ">=4.0a1,<4.2.11",
+                ">=5.0a1,<5.0.3"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are vulnerable to potential regular expression denial-of-service (REDoS). django.utils.text.Truncator.words() method (with html=True) and truncatewords_html template filter were subject to a potential regular expression denial-of-service attack using a suitably crafted string (follow up to CVE-2019-14232 and CVE-2023-43665).",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-27351",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/65771/97c"
+        },
+        {
+            "vulnerability_id": "74985",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.18"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.18",
+                ">=5.0.0,<5.0.11",
+                ">=5.1.0,<5.1.5"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service attack due to improper IPv6 validation. The lack of upper limit enforcement for input strings in clean_ipv6_address, is_valid_ipv6_address, and the django.forms.GenericIPAddressField form field allowed attackers to exploit overly long inputs, causing resource exhaustion. The vulnerability is addressed by defining a max_length of 39 characters for affected form fields. The django.db.models.GenericIPAddressField model field was not impacted. Users should upgrade promptly.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-56374",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74985/97c"
+        },
+        {
+            "vulnerability_id": "77119",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.21"
+            ],
+            "all_vulnerable_specs": [
+                ">=5.2.0,<5.2.1",
+                ">=5.1.0,<5.1.9",
+                "<4.2.21"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "An issue was discovered in Django 4.2 before 4.2.21, 5.1 before 5.1.9, and 5.2 before 5.2.1. The django.utils.html.strip_tags() function is vulnerable to a potential denial-of-service (slow performance) when processing inputs containing large sequences of incomplete HTML tags. The template filter striptags is also vulnerable, because it is built on top of strip_tags().",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2025-32873",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/77119/97c"
+        },
+        {
+            "vulnerability_id": "72110",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.14"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are affected by a directory-traversal vulnerability in the Storage.save() method. Derived classes of the django.core.files.storage.Storage base class that overrides the generate_filename() method without replicating the file path validations existing in the parent class could allow for directory traversal via certain inputs when calling save(). This could enable an attacker to manipulate file paths and access unintended directories.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39330",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72110/97c"
+        },
+        {
+            "vulnerability_id": "72109",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.14"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are affected by a username enumeration vulnerability caused by timing differences in the django.contrib.auth.backends.ModelBackend.authenticate() method. This method allowed remote attackers to enumerate users through a timing attack involving login requests for users with unusable passwords. The timing difference in the authentication process exposed whether a username was valid or not, potentially aiding attackers in gaining unauthorized access.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39329",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72109/97c"
+        },
+        {
+            "vulnerability_id": "72095",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.14"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are affected by a potential denial-of-service vulnerability in the django.utils.html.urlize() function. The urlize and urlizetrunc template filters were susceptible to a denial-of-service attack via certain inputs containing many brackets. An attacker could exploit this vulnerability to cause significant delays or crashes in the affected application.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-38875",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72095/97c"
+        },
+        {
+            "vulnerability_id": "72111",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.14"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.14",
+                ">=5.0a1,<5.0.7"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are potentially vulnerable to denial-of-service via the get_supported_language_variant() method. This method was susceptible to a denial-of-service attack when used with very long strings containing specific characters. Exploiting this vulnerability could cause significant delays or crashes in the affected application, potentially leading to service disruption.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-39614",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72111/97c"
+        },
+        {
+            "vulnerability_id": "74396",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.17"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.17",
+                ">=5.0a1,<5.0.10",
+                ">=5.1a1,<5.1.4"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Django affected versions are vulnerable to a potential SQL injection in the HasKey(lhs, rhs) lookup on Oracle databases. The vulnerability arises when untrusted data is directly used as the lhs value in the django.db.models.fields.json.HasKey lookup. However, applications using the jsonfield.has_key lookup with the __ syntax remain unaffected by this issue.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-53908",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74396/97c"
+        },
+        {
+            "vulnerability_id": "74395",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.17"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.17",
+                ">=5.0a1,<5.0.10",
+                ">=5.1a1,<5.1.4"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django are vulnerable to a potential denial-of-service (DoS) attack in the `django.utils.html.strip_tags()` method. The vulnerability occurs when the `strip_tags()` method or the `striptags` template filter processes inputs containing large sequences of nested, incomplete HTML entities.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-53907",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/74395/97c"
+        },
+        {
+            "vulnerability_id": "72521",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.15"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Affected versions of Django has a potential SQL injection vulnerability in the QuerySet.values() and QuerySet.values_list() methods. When used on models with a JSONField, these methods are susceptible to SQL injection through column aliases if a crafted JSON object key is passed as an argument.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-42005",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72521/97c"
+        },
+        {
+            "vulnerability_id": "72515",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.15"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Django addresses a memory exhaustion issue in django.utils.numberformat.floatformat(). When floatformat receives a string representation of a number in scientific notation with a large exponent, it could lead to excessive memory consumption. To prevent this, decimals with more than 200 digits are now returned as-is.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-41990",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72515/97c"
+        },
+        {
+            "vulnerability_id": "72520",
+            "package_name": "django",
+            "ignored": {},
+            "ignored_reason": null,
+            "ignored_expires": null,
+            "vulnerable_spec": [
+                "<4.2.15"
+            ],
+            "all_vulnerable_specs": [
+                "<4.2.15",
+                ">=5.0a1,<5.0.8"
+            ],
+            "analyzed_version": "4.2.7",
+            "analyzed_requirement": {
+                "raw": "django==4.2.7",
+                "extras": [],
+                "marker": null,
+                "name": "django",
+                "specifier": "==4.2.7",
+                "url": null,
+                "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+            },
+            "advisory": "Django has a potential denial-of-service vulnerability in django.utils.html.urlize() and AdminURLFieldWidget. The urlize and urlizetrunc functions, along with AdminURLFieldWidget, are vulnerable to denial-of-service attacks when handling inputs with a very large number of Unicode characters.",
+            "is_transitive": false,
+            "published_date": null,
+            "fixed_versions": [],
+            "closest_versions_without_known_vulnerabilities": [],
+            "resources": [],
+            "CVE": "CVE-2024-41991",
+            "severity": null,
+            "affected_versions": [],
+            "more_info_url": "https://data.safetycli.com/v/72520/97c"
+        }
+    ],
+    "ignored_vulnerabilities": [],
+    "remediations": {
+        "werkzeug": {
+            "requirements": {
+                "==3.0.1": {
+                    "vulnerabilities_found": 3,
+                    "version": "3.0.1",
+                    "requirement": {
+                        "raw": "werkzeug==3.0.1",
+                        "extras": [],
+                        "marker": null,
+                        "name": "werkzeug",
+                        "specifier": "==3.0.1",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/werkzeug/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "virtualenv": {
+            "requirements": {
+                "==20.25.0": {
+                    "vulnerabilities_found": 1,
+                    "version": "20.25.0",
+                    "requirement": {
+                        "raw": "virtualenv==20.25.0",
+                        "extras": [],
+                        "marker": null,
+                        "name": "virtualenv",
+                        "specifier": "==20.25.0",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/virtualenv/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "tornado": {
+            "requirements": {
+                "==6.4": {
+                    "vulnerabilities_found": 4,
+                    "version": "6.4",
+                    "requirement": {
+                        "raw": "tornado==6.4",
+                        "extras": [],
+                        "marker": null,
+                        "name": "tornado",
+                        "specifier": "==6.4",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/tornado/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "sqlparse": {
+            "requirements": {
+                "==0.4.4": {
+                    "vulnerabilities_found": 1,
+                    "version": "0.4.4",
+                    "requirement": {
+                        "raw": "sqlparse==0.4.4",
+                        "extras": [],
+                        "marker": null,
+                        "name": "sqlparse",
+                        "specifier": "==0.4.4",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/sqlparse/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "requests": {
+            "requirements": {
+                "==2.31.0": {
+                    "vulnerabilities_found": 1,
+                    "version": "2.31.0",
+                    "requirement": {
+                        "raw": "requests==2.31.0",
+                        "extras": [],
+                        "marker": null,
+                        "name": "requests",
+                        "specifier": "==2.31.0",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/requests/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "pypdf2": {
+            "requirements": {
+                "==3.0.1": {
+                    "vulnerabilities_found": 1,
+                    "version": "3.0.1",
+                    "requirement": {
+                        "raw": "pypdf2==3.0.1",
+                        "extras": [],
+                        "marker": null,
+                        "name": "pypdf2",
+                        "specifier": "==3.0.1",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/pypdf2/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "flask": {
+            "requirements": {
+                "==2.3.3": {
+                    "vulnerabilities_found": 1,
+                    "version": "2.3.3",
+                    "requirement": {
+                        "raw": "flask==2.3.3",
+                        "extras": [],
+                        "marker": null,
+                        "name": "flask",
+                        "specifier": "==2.3.3",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/flask/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "pillow": {
+            "requirements": {
+                "==10.1.0": {
+                    "vulnerabilities_found": 3,
+                    "version": "10.1.0",
+                    "requirement": {
+                        "raw": "pillow==10.1.0",
+                        "extras": [],
+                        "marker": null,
+                        "name": "pillow",
+                        "specifier": "==10.1.0",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/pillow/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "jinja2": {
+            "requirements": {
+                "==3.1.2": {
+                    "vulnerabilities_found": 5,
+                    "version": "3.1.2",
+                    "requirement": {
+                        "raw": "jinja2==3.1.2",
+                        "extras": [],
+                        "marker": null,
+                        "name": "jinja2",
+                        "specifier": "==3.1.2",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/jinja2/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        },
+        "django": {
+            "requirements": {
+                "==4.2.7": {
+                    "vulnerabilities_found": 16,
+                    "version": "4.2.7",
+                    "requirement": {
+                        "raw": "django==4.2.7",
+                        "extras": [],
+                        "marker": null,
+                        "name": "django",
+                        "specifier": "==4.2.7",
+                        "url": null,
+                        "found": "c:\\users\\muham\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages"
+                    },
+                    "more_info_url": "https://data.safetycli.com/p/pypi/django/97c/"
+                }
+            },
+            "current_version": null,
+            "vulnerabilities_found": null,
+            "recommended_version": null,
+            "other_recommended_versions": [],
+            "more_info_url": null
+        }
+    },
+    "remediations_results": {
+        "vulnerabilities_fixed": [],
+        "remediations_applied": {},
+        "remediations_skipped": {}
+    }
+}
+
+
++===========================================================================================================================================================================================+
+
+
+DEPRECATED: this command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.
+
+
+We highly encourage switching to the new `scan` command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.
+
+
++===========================================================================================================================================================================================+
+
+
