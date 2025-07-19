@@ -1,0 +1,32 @@
+# TechNova Inventory Service - Security-Enhanced Requirements
+# Core Flask Dependencies (Latest Secure Versions)
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Monitoring and Metrics (Security Patched)
+prometheus-client==0.19.0
+prometheus-flask-exporter==0.23.0
+
+# Development and Testing (Latest Secure)
+pytest==7.4.4
+pytest-cov==4.1.0
+pytest-html==4.1.1
+coverage==7.3.4
+
+# Security Tools
+bandit==1.7.5           # Security linting
+safety==2.3.5           # Dependency vulnerability scanning
+pip-audit==2.6.1        # Comprehensive dependency auditing
+
+# Production Server (Recommended)
+gunicorn==21.2.0        # Production WSGI server
+gevent==23.9.1         # Async support
+
+# Development Tools
+black==23.12.0         # Code formatting
+flake8==6.1.0          # Code linting
+mypy==1.8.0            # Type checking
+
+# Security Headers and HTTPS
+Flask-Talisman==1.1.0  # Security headers
+cryptography==41.0.8   # Cryptographic primitives

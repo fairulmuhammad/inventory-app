@@ -196,5 +196,30 @@ def delete_item(item_id):
         ERROR_COUNT.labels(error_type='InternalError').inc()
         return jsonify({"error": "Internal server error"}), 500
 
+def get_host():
+    """
+    Determine appropriate host binding based on environment.
+    Returns 0.0.0.0 only in containerized environments for security.
+    """
+    import os
+    
+    # Check if running in Docker container
+    if os.path.exists('/.dockerenv'):
+        return "0.0.0.0"  # Docker container - allow external access
+    
+    # Check environment variable
+    if os.getenv('FLASK_ENV') == 'production' and os.getenv('ALLOW_EXTERNAL_ACCESS') == 'true':
+        return "0.0.0.0"  # Explicitly allowed external access
+    
+    return "127.0.0.1"  # Default to localhost only for security
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    import os
+    
+    # Security-aware configuration
+    host = get_host()
+    port = int(os.getenv('FLASK_PORT', 5000))
+    debug = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
+    
+    logger.info(f"Starting Flask app on {host}:{port} (debug={debug})")
+    app.run(host=host, port=port, debug=debug)
