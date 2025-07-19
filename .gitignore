@@ -1,0 +1,4 @@
+.scannerwork/
+sonar-scanner-*/
+__pycache__/
+*.pyc
