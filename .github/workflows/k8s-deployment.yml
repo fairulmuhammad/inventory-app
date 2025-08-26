@@ -6,8 +6,8 @@ on:
     tags: [ 'v*' ]
   pull_request:
     branches: [ main ]
-  schedule:
-    - cron: '0 2 * * 1'  # Run chaos tests every Monday at 2 AM
+  # schedule:
+  #   - cron: '0 2 * * 1'  # Run chaos tests every Monday at 2 AM (disabled)
   workflow_dispatch:
     inputs:
       revision:
